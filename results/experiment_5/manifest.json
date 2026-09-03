@@ -1,0 +1,78 @@
+{
+  "created_at_utc": "2026-08-20T09:24:28.829398+00:00",
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "link_lives_release2",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen"
+  ],
+  "expected_cells": 5616,
+  "families": [
+    "hef_gbdt_e5_finetuned_jina_oof",
+    "hef_gbdt_e5_finetuned_roberta_oof",
+    "hef_gbdt_e5_official_ditto",
+    "hef_gbdt_e5_official_ditto_mixda",
+    "jina_finetuned",
+    "joint_neural_hef_bert_finetuned",
+    "joint_neural_hef_bge_finetuned",
+    "joint_neural_hef_e5_finetuned",
+    "joint_neural_hef_gte_finetuned",
+    "joint_neural_hef_jina_finetuned",
+    "joint_neural_hef_roberta_finetuned",
+    "official_ditto",
+    "official_ditto_mixda"
+  ],
+  "files": {
+    "exp05_per_run_metrics.csv": {
+      "bytes": 1645054,
+      "sha256": "89ac93eca079de5f92bea0b620517a783f5fe1c154621873a2a7ed6ea383b218"
+    },
+    "exp05_results_by_dataset_fraction.csv": {
+      "bytes": 604582,
+      "sha256": "ca77301fc875cd57e36c5aec4cfe2b945d7b10eb61578ff49de3f1fac3e9dd95"
+    },
+    "exp05_results_macro_all_datasets.csv": {
+      "bytes": 95803,
+      "sha256": "6d47433e0ca5c1390474d1700f8103ce49517be6cf617d7f33af9ae990369c6b"
+    }
+  },
+  "fractions_percent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100
+  ],
+  "leakage_safe_oof_required_and_preserved": true,
+  "sample_standard_deviation": true,
+  "seeds": [
+    20260725,
+    20260726,
+    20260727
+  ],
+  "status": "complete",
+  "untouched_test_evaluation": true,
+  "validation_only_selection": true,
+  "verified_cells": 5616
+}

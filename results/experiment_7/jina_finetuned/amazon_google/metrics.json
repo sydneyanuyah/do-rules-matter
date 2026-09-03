@@ -1,0 +1,402 @@
+{
+  "cold_end_to_end_seconds": 24.917918860999634,
+  "dataset": "amazon_google",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "jina_finetuned",
+  "model_load_seconds": 5.676271222997457,
+  "scenarios": [
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.8711656441717791,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.9255623721881391,
+        "mrr_retention": 1.0,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "neural_inference": 19.241570005004178
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4235205120,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2266693632,
+        "rss_start_bytes": 1774731264,
+        "seconds": 19.241647638002178
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 9166,
+        "mask_sha256": "f9a2ac8148d5ae9a3778d11a9918c1459d72ea4824255edfa2e1aa3d88351073",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 563
+      },
+      "metrics": {
+        "hits_at_1": 0.7791411042944786,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.8943661971830987,
+        "mrr_at_100": 0.8375131221667418,
+        "mrr_retention": 0.9048694581076817,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "neural_inference": 17.50944072000857
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4205692416,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2283040768,
+        "rss_start_bytes": 2276679680,
+        "seconds": 17.509576875992934
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 7576,
+        "mask_sha256": "6fca0cb8783cef74f8499f433b1d0a33aa21240c50f8822688acfbb9e2c51b57",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 546
+      },
+      "metrics": {
+        "hits_at_1": 0.7055214723926381,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.8098591549295775,
+        "mrr_at_100": 0.7922827244898344,
+        "mrr_retention": 0.8560014411743903,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "neural_inference": 18.076701952013536
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4235205120,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2284797952,
+        "rss_start_bytes": 2283761664,
+        "seconds": 18.076760260999436
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 7277,
+        "mask_sha256": "df2a14f2e13d5182dd33685c5b03caf754ca3f4e8910b8abfa42395d4dde7b0f",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 563
+      },
+      "metrics": {
+        "hits_at_1": 0.8159509202453987,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9366197183098591,
+        "mrr_at_100": 0.8801649611465563,
+        "mrr_retention": 0.9509515377831772,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "neural_inference": 18.12647464800102
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4235205120,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2284797952,
+        "rss_start_bytes": 2284793856,
+        "seconds": 18.12658332499268
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 26311,
+        "mask_sha256": "76958f7951262962a959aeda6c04eb18469929e5f8e934dec278a5ed3a99ddb1",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1700
+      },
+      "metrics": {
+        "hits_at_1": 0.50920245398773,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.5845070422535211,
+        "mrr_at_100": 0.5944525284373801,
+        "mrr_retention": 0.6422609067739259,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "neural_inference": 15.6580957989936
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4164374016,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2285953024,
+        "rss_start_bytes": 2284793856,
+        "seconds": 15.6581660189986
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 24986,
+        "mask_sha256": "23823b0bf886fb15ab59b941f5ab4256617258ddfe6030de1e7ec4761a26f94c",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1697
+      },
+      "metrics": {
+        "hits_at_1": 0.4785276073619632,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.5492957746478874,
+        "mrr_at_100": 0.5452958378424769,
+        "mrr_retention": 0.5891508278943244,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "neural_inference": 16.090931572005502
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4229302784,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2286215168,
+        "rss_start_bytes": 2285948928,
+        "seconds": 16.090995472011855
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 25056,
+        "mask_sha256": "a456acbe9f2c4bbbd8471f257db8f85d9033236541fd4e99b9b4afac44cb0656",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1685
+      },
+      "metrics": {
+        "hits_at_1": 0.5030674846625767,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.5774647887323944,
+        "mrr_at_100": 0.5745374384831243,
+        "mrr_retention": 0.6207441613306403,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "neural_inference": 16.18941832400742
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4235205120,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2289475584,
+        "rss_start_bytes": 2289471488,
+        "seconds": 16.189471635996597
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 42802,
+        "mask_sha256": "42c781651c3a8af8e19c8528b3ef4963dd2daa8a88775a9b5a21c91b57180460",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 2831
+      },
+      "metrics": {
+        "hits_at_1": 0.36809815950920244,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.4225352112676056,
+        "mrr_at_100": 0.4367208768638212,
+        "mrr_retention": 0.4718438108404962,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "neural_inference": 13.334829087994876
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4140763648,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2289475584,
+        "rss_start_bytes": 2289471488,
+        "seconds": 13.33493720399565
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 41773,
+        "mask_sha256": "388ccdac72de69a181a3cbbd5b90651322b3147828c10eb424670de8ac29a7ca",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 2820
+      },
+      "metrics": {
+        "hits_at_1": 0.34355828220858897,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3943661971830986,
+        "mrr_at_100": 0.40555669290047897,
+        "mrr_retention": 0.43817327182574944,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "neural_inference": 13.945944323990261
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4140763648,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2289475584,
+        "rss_start_bytes": 2289471488,
+        "seconds": 13.945996184003889
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 40833,
+        "mask_sha256": "f804434cb306d9bc88aa4b03827f7e66443919b27e477041b05eab9a2aabd4ae",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 2794
+      },
+      "metrics": {
+        "hits_at_1": 0.34355828220858897,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3943661971830986,
+        "mrr_at_100": 0.43074335326963137,
+        "mrr_retention": 0.46538554959975637,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "neural_inference": 13.384217423998052
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4123056128,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2289733632,
+        "rss_start_bytes": 2289471488,
+        "seconds": 13.38428851099161
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 58536,
+        "mask_sha256": "d2addbf020c20acf1fc080119aca2cdc301773edcc56f4b8d2adc7699c3aa0f8",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 3950
+      },
+      "metrics": {
+        "hits_at_1": 0.3128834355828221,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3591549295774648,
+        "mrr_at_100": 0.3892601602663306,
+        "mrr_retention": 0.42056610333679995,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "neural_inference": 11.121129538005334
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4111250944,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2290126848,
+        "rss_start_bytes": 2289729536,
+        "seconds": 11.121183569994173
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 58060,
+        "mask_sha256": "c96330f47e3926dd02f0ad5d2c9a839d10458bc16bcbae1dd51f9643d1ba9693",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 3922
+      },
+      "metrics": {
+        "hits_at_1": 0.3128834355828221,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3591549295774648,
+        "mrr_at_100": 0.3946209930592514,
+        "mrr_retention": 0.42635807690228444,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "neural_inference": 11.202804547996493
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4064030208,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2290126848,
+        "rss_start_bytes": 2290122752,
+        "seconds": 11.202854538991232
+      }
+    },
+    {
+      "dataset": "amazon_google",
+      "mask": {
+        "affected_pair_cells": 58329,
+        "mask_sha256": "d77f85b0d6116b7c84efee7de2e763119709ff2b7e505cf7753f17f6b3526863",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 3917
+      },
+      "metrics": {
+        "hits_at_1": 0.32515337423312884,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3732394366197183,
+        "mrr_at_100": 0.3997597373348722,
+        "mrr_retention": 0.4319101006556617,
+        "queries": 163
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "neural_inference": 10.869948810999631
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 4081737728,
+        "gpu_peak_reserved_bytes": 4659871744,
+        "rss_peak_bytes": 2291138560,
+        "rss_start_bytes": 2291134464,
+        "seconds": 10.870005634002155
+      }
+    }
+  ],
+  "serialized_model_bytes": 3392900064,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "amazon_google",
+  "mask": {
+    "affected_pair_cells": 26311,
+    "mask_sha256": "76958f7951262962a959aeda6c04eb18469929e5f8e934dec278a5ed3a99ddb1",
+    "probability": 0.3,
+    "seed": 20260725,
+    "unique_record_fields_masked": 1700
+  },
+  "metrics": {
+    "hits_at_1": 0.5153374233128835,
+    "hits_at_100": 1.0,
+    "hits_at_1_retention": 0.5490196078431373,
+    "mrr_at_100": 0.573724300191074,
+    "mrr_retention": 0.5934451248935699,
+    "queries": 163
+  },
+  "model": "joint_neural_hef_jina",
+  "scenario": "p30_seed20260725",
+  "stages": {
+    "joint_neural_inference": 3.836400329018943,
+    "structured_features": 3.836400329018943
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 3845916672,
+    "gpu_peak_reserved_bytes": 4072669184,
+    "rss_peak_bytes": 5636202496,
+    "rss_start_bytes": 5635678208,
+    "seconds": 22.040215102009824
+  }
+}

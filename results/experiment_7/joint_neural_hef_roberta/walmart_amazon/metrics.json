@@ -1,0 +1,415 @@
+{
+  "cold_end_to_end_seconds": 54.23745933899772,
+  "dataset": "walmart_amazon",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "joint_neural_hef_roberta",
+  "model_load_seconds": 7.446248663996812,
+  "scenarios": [
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.9465648854961832,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.9673228873710994,
+        "mrr_retention": 1.0,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "joint_neural_inference": 6.854694918001769,
+        "structured_features": 6.854694918001769
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5655151616,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5785976832,
+        "rss_start_bytes": 5255983104,
+        "seconds": 46.79121067500091
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 10506,
+        "mask_sha256": "6cc8e9dfe82767860b91e4a4fbf4b3857d95a63f1575c8a81dede201489276a8",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 3085
+      },
+      "metrics": {
+        "hits_at_1": 0.8549618320610687,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9032258064516129,
+        "mrr_at_100": 0.8997940142978311,
+        "mrr_retention": 0.9301899355893543,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "joint_neural_inference": 5.914830532987253,
+        "structured_features": 5.914830532987253
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5622129664,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5795295232,
+        "rss_start_bytes": 5785952256,
+        "seconds": 43.08962947699183
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 10612,
+        "mask_sha256": "8a1f75da4039030c9193f6ba40d31d331b85cd12ed6938de3b956a6d5f625e7d",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 3059
+      },
+      "metrics": {
+        "hits_at_1": 0.9007633587786259,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9516129032258064,
+        "mrr_at_100": 0.9318157033805889,
+        "mrr_retention": 0.9632933486283897,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "joint_neural_inference": 5.975466378993588,
+        "structured_features": 5.975466378993588
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5655151616,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5797236736,
+        "rss_start_bytes": 5795291136,
+        "seconds": 43.58169464500679
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 10374,
+        "mask_sha256": "81fbdc8acaab2a158fc750525b6990482cfcb572b9e27ee5440c2ebe6732811e",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 3066
+      },
+      "metrics": {
+        "hits_at_1": 0.8778625954198473,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9274193548387096,
+        "mrr_at_100": 0.9111740601861841,
+        "mrr_retention": 0.9419544105510504,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "joint_neural_inference": 5.967853451991687,
+        "structured_features": 5.967853451991687
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5655151616,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5799383040,
+        "rss_start_bytes": 5796171776,
+        "seconds": 43.480793793001794
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 30129,
+        "mask_sha256": "b92598194855e6a7c175296582c94eeb18aa463d5b0432cb80f65bb747e13f86",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 9315
+      },
+      "metrics": {
+        "hits_at_1": 0.6717557251908397,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.7096774193548387,
+        "mrr_at_100": 0.7287908690723118,
+        "mrr_retention": 0.7534101369739655,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "joint_neural_inference": 4.4636718339897925,
+        "structured_features": 4.4636718339897925
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5622129664,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798363136,
+        "rss_start_bytes": 5798346752,
+        "seconds": 37.99234691199672
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 29165,
+        "mask_sha256": "6114b983e8810c1232ddb1fc6befacf82b09ea5835fabe2ea3f1c624087b82f0",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 9354
+      },
+      "metrics": {
+        "hits_at_1": 0.7022900763358778,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.7419354838709676,
+        "mrr_at_100": 0.7572826312481161,
+        "mrr_retention": 0.7828643787248628,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "joint_neural_inference": 4.472554654013948,
+        "structured_features": 4.472554654013948
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5556282368,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798371328,
+        "rss_start_bytes": 5798363136,
+        "seconds": 38.74587377801072
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 29888,
+        "mask_sha256": "48b4a279334460f69b614320c6f065501faf3e92adbff940c2d9c95d5da8da89",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 9166
+      },
+      "metrics": {
+        "hits_at_1": 0.5877862595419847,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.6209677419354839,
+        "mrr_at_100": 0.6650543719288374,
+        "mrr_retention": 0.6875205586588162,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "joint_neural_inference": 4.4639952889992855,
+        "structured_features": 4.4639952889992855
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5556282368,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798371328,
+        "rss_start_bytes": 5798367232,
+        "seconds": 38.138817996994476
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 51302,
+        "mask_sha256": "7587c51f9b4b71dd75f2f5b7c7a668aa7f8ba16fbe64b133c2a101b1b8d689fe",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 15540
+      },
+      "metrics": {
+        "hits_at_1": 0.4122137404580153,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.43548387096774194,
+        "mrr_at_100": 0.46598513457302376,
+        "mrr_retention": 0.4817265678882416,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "joint_neural_inference": 3.1579375290020835,
+        "structured_features": 3.1579375290020835
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5556282368,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798371328,
+        "rss_start_bytes": 5798367232,
+        "seconds": 32.04105348899611
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 49127,
+        "mask_sha256": "23c3c111d675dbc011c5562c968ebb924695c94a935a2f424c0622bee17593eb",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 15477
+      },
+      "metrics": {
+        "hits_at_1": 0.42748091603053434,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.45161290322580644,
+        "mrr_at_100": 0.4846121355491451,
+        "mrr_retention": 0.5009828071639855,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "joint_neural_inference": 3.281166653978289,
+        "structured_features": 3.281166653978289
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5523457024,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798707200,
+        "rss_start_bytes": 5798379520,
+        "seconds": 32.806417142011924
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 49850,
+        "mask_sha256": "2fc89618ea65023e9dd836814fc849ae5c1258d5e1039bc768f947e5e3c04377",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 15363
+      },
+      "metrics": {
+        "hits_at_1": 0.3893129770992366,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.41129032258064513,
+        "mrr_at_100": 0.45449051130250573,
+        "mrr_retention": 0.469843645008419,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "joint_neural_inference": 3.14697673698538,
+        "structured_features": 3.14697673698538
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5556282368,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798916096,
+        "rss_start_bytes": 5798912000,
+        "seconds": 32.282818360006786
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 71727,
+        "mask_sha256": "91450a1c83df9187fd836de59fe2ece4e3f24c76884394495f5ef3a1c5e01a5f",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 21675
+      },
+      "metrics": {
+        "hits_at_1": 0.17557251908396945,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.1854838709677419,
+        "mrr_at_100": 0.2256432311632506,
+        "mrr_retention": 0.23326568006313061,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "joint_neural_inference": 2.242326706997119,
+        "structured_features": 2.242326706997119
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5458002944,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5798916096,
+        "rss_start_bytes": 5798912000,
+        "seconds": 25.93454950999876
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 69817,
+        "mask_sha256": "66859905feb8af8f438387412806835690f93c5464f12a0192f66b8eb8754b9d",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 21693
+      },
+      "metrics": {
+        "hits_at_1": 0.24427480916030533,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.25806451612903225,
+        "mrr_at_100": 0.302919941874878,
+        "mrr_retention": 0.3131528735954194,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "joint_neural_inference": 2.324731880988111,
+        "structured_features": 2.324731880988111
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5490697216,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5799079936,
+        "rss_start_bytes": 5798912000,
+        "seconds": 26.35541600000579
+      }
+    },
+    {
+      "dataset": "walmart_amazon",
+      "mask": {
+        "affected_pair_cells": 69897,
+        "mask_sha256": "76b35525c504d3843e7806ccbe03a80d4d64d7f243cedf770241a78dffa5903f",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 21545
+      },
+      "metrics": {
+        "hits_at_1": 0.15267175572519084,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.16129032258064516,
+        "mrr_at_100": 0.2079661901553203,
+        "mrr_retention": 0.21499149133182568,
+        "queries": 131
+      },
+      "model": "joint_neural_hef_roberta",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "joint_neural_inference": 2.199502947012661,
+        "structured_features": 2.199502947012661
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5392811008,
+        "gpu_peak_reserved_bytes": 5924454400,
+        "rss_peak_bytes": 5800022016,
+        "rss_start_bytes": 5800017920,
+        "seconds": 25.850719902999117
+      }
+    }
+  ],
+  "serialized_model_bytes": 4282602240,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

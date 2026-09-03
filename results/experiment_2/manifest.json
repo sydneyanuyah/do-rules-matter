@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "counts": {
+    "roberta_oof": 18,
+    "jina_oof": 18,
+    "propagated": 108
+  },
+  "run_rows": 198,
+  "summary_rows": 66,
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "link_lives_release2",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen"
+  ],
+  "seeds": [
+    20260725,
+    20260726,
+    20260727
+  ],
+  "completed_utc": "2026-08-20T03:41:58.198497+00:00",
+  "wait_seconds": 30.46195077896118
+}

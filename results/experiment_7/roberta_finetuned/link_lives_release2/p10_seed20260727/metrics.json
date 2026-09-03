@@ -1,0 +1,30 @@
+{
+  "dataset": "link_lives_release2",
+  "mask": {
+    "affected_pair_cells": 645679,
+    "mask_sha256": "9878f63a062041ca6dbfa50a26c22ec2df9324078fa02ce0ed0b9fc6c269686b",
+    "probability": 0.1,
+    "seed": 20260727,
+    "unique_record_fields_masked": 9148
+  },
+  "metrics": {
+    "hits_at_1": 0.708,
+    "hits_at_100": 0.9852307692307692,
+    "hits_at_1_retention": 0.7768399729912221,
+    "mrr_at_100": 0.7896981562749092,
+    "mrr_retention": 0.8356764592440533,
+    "queries": 3250
+  },
+  "model": "roberta_finetuned",
+  "scenario": "p10_seed20260727",
+  "stages": {
+    "neural_inference": 897.2295690210012
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 3727733248,
+    "gpu_peak_reserved_bytes": 4850712576,
+    "rss_peak_bytes": 2499473408,
+    "rss_start_bytes": 1996230656,
+    "seconds": 897.2296484529943
+  }
+}

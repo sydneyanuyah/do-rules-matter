@@ -1,0 +1,156 @@
+{
+  "condition": "drop_semantic",
+  "dataset": "walmart_amazon",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction",
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.8473282442748091,
+        "hits_at_10": 0.9847328244274809,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9694656488549618,
+        "mrr": 0.8982225714713367,
+        "ndcg": 0.9196160466148802,
+        "queries": 131
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.8473282442748091,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9073367260390162,
+        "ndcg": 0.9282395346413167,
+        "queries": 131
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8473282442748091,
+        "hits_at_10": 0.9923664122137404,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9770992366412213,
+        "mrr": 0.9007088331515812,
+        "ndcg": 0.9222396946138245,
+        "queries": 131
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.8319327731092437,
+        "hits_at_10": 0.9663865546218487,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9495798319327731,
+        "mrr": 0.8803172701961629,
+        "ndcg": 0.9061930735290036,
+        "queries": 119
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.8487394957983193,
+        "hits_at_10": 0.9831932773109243,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9747899159663865,
+        "mrr": 0.8991694579929873,
+        "ndcg": 0.9223249283127143,
+        "queries": 119
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8319327731092437,
+        "hits_at_10": 0.9747899159663865,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.957983193277311,
+        "mrr": 0.8845331834938203,
+        "ndcg": 0.9103375362922836,
+        "queries": 119
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    }
+  },
+  "runtime_seconds": 30.585367679595947,
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": false,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09375,
+        "positives": 576,
+        "rows": 6144
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 48,
+      "learning_rate": 0.001,
+      "validation_f1": 0.6804733727810651
+    }
+  ]
+}

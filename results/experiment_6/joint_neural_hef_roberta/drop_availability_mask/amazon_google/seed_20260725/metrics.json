@@ -1,0 +1,158 @@
+{
+  "condition": "drop_availability_mask",
+  "dataset": "amazon_google",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.9263803680981595,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9938650306748467,
+        "mrr": 0.959190424636112,
+        "ndcg": 0.969955294514258,
+        "queries": 163
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9325153374233128,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9938650306748467,
+        "mrr": 0.9625766871165643,
+        "ndcg": 0.9725783230003033,
+        "queries": 163
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.9325153374233128,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9938650306748467,
+        "mrr": 0.9623655913978495,
+        "ndcg": 0.972442193845444,
+        "queries": 163
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.9076923076923077,
+        "hits_at_10": 0.9923076923076923,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9846153846153847,
+        "mrr": 0.9419730202862732,
+        "ndcg": 0.95470888971591,
+        "queries": 130
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 130,
+      "total_queries": 130
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9147286821705426,
+        "hits_at_10": 0.9922480620155039,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9844961240310077,
+        "mrr": 0.947484420124639,
+        "ndcg": 0.9597001470097138,
+        "queries": 129
+      },
+      "hits_at_20_end_to_end": 0.9923076923076923,
+      "pool_hit": 0.9923076923076923,
+      "pool_hit_queries": 129,
+      "total_queries": 130
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.9153846153846154,
+        "hits_at_10": 0.9923076923076923,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9846153846153847,
+        "mrr": 0.9474403645135353,
+        "ndcg": 0.9590700409648069,
+        "queries": 130
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 130,
+      "total_queries": 130
+    }
+  },
+  "runtime_seconds": 438.69216990470886,
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": true,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1020497165285652,
+        "positives": 234,
+        "rows": 2293
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1016875181844632,
+        "positives": 699,
+        "rows": 6874
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1020497165285652,
+        "positives": 234,
+        "rows": 2293
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 6,
+      "learning_rate": 1e-05,
+      "validation_f1": 0.7741935483870968
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 2e-05,
+      "validation_f1": 0.7855711422845691
+    }
+  ]
+}

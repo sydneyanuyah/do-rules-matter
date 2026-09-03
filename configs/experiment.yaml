@@ -1,0 +1,259 @@
+project:
+  name: paper1-hef
+  target_venue: EACL_2027_Industry_Track
+  submission_deadline: "2026-09-11T23:59:00-12:00"
+  submission_policy: no_concurrent_submission
+  seed: 20260725
+  output_root: artifacts
+  data_root: data/extracted
+  evidence_scope: public_benchmarks_only
+
+protocol:
+  split_policy: official_only
+  threshold_selection: maximize_validation_f1
+  test_policy: evaluate_once_after_model_and_threshold_lock
+  primary_metric: f1_match_class
+  secondary_metrics: [precision, recall, average_precision, roc_auc, brier, ece]
+  bootstrap_replicates: 2000
+  confidence_level: 0.95
+  multiple_testing: holm
+  repetitions: 3
+  seeds: [20260725, 20260726, 20260727]
+  headline_datasets:
+    - wdc_80_medium_unseen
+    - abt_buy
+    - amazon_google
+  secondary_public_datasets:
+    - wdc_80_medium_seen
+    - walmart_amazon
+  genealogy_datasets:
+    - link_lives_release2
+  excluded_from_claim_aggregation:
+    - dblp_acm
+
+dataset_groups:
+  exp01_headline:
+    - wdc_80_medium_unseen
+    - abt_buy
+    - amazon_google
+  exp01_secondary:
+    - wdc_80_medium_seen
+    - walmart_amazon
+  exp01_genealogy:
+    - link_lives_release2
+  exp01_all:
+    - wdc_80_medium_unseen
+    - abt_buy
+    - amazon_google
+    - wdc_80_medium_seen
+    - walmart_amazon
+    - link_lives_release2
+  public_genealogy_transfer:
+    - link_lives_release2
+
+public_genealogy_candidates:
+  census_tree:
+    status: source_verified_pending_access_and_schema_audit
+    version: exact_year_pair_tbd
+    official_url: https://www.censustree.org/data
+    reported_scale: over_700_million_links
+    paper_role: candidate_headline_after_admission_gates
+  life_m:
+    status: source_verified_pending_download_and_schema_audit
+    version: V5
+    official_url: https://doi.org/10.3886/E155186V5
+    reported_scale: millions_of_links_four_generations
+    paper_role: candidate_headline_after_admission_gates
+  link_lives:
+    status: official_archive_verified_exp01_final_run_pending
+    version: release_2
+    official_url: https://doi.org/10.5279/dk-ra-14001
+    reported_scale: 64_million_registrations_over_16_million_links
+    paper_role: exp01_public_genealogy_benchmark
+
+datasets:
+  link_lives_release2:
+    adapter: link_lives
+    directory: ../public_genealogy/link_lives/processed/exp01
+    file: primary_pairs.csv.gz
+    tier: must
+    experiment: exp01_pair_classification
+    preregistration: scope_amendment_2026_07_28_before_final_genealogy_run
+    rationale: "Public genealogical benchmark required in Experiment 1; reported as its own genealogy comparison family because it was added after the original product-only scope lock."
+  abt_buy:
+    adapter: deepmatcher
+    directory: deepmatcher/abt_buy/exp_data
+    tier: must
+  amazon_google:
+    adapter: deepmatcher
+    directory: deepmatcher/amazon_google
+    tier: must
+  walmart_amazon:
+    adapter: deepmatcher
+    directory: deepmatcher/walmart_amazon/exp_data
+    tier: should
+  wdc_80_medium_unseen:
+    adapter: wdc
+    directory: wdc/80pair
+    train: wdcproducts80cc20rnd000un_train_medium.json.gz
+    valid: wdcproducts80cc20rnd000un_valid_medium.json.gz
+    test: wdcproducts80cc20rnd100un_gs.json.gz
+    tier: must
+    preregistration: primary
+    rationale: "Hard corner cases plus 100% unseen test entities at a non-extreme development size."
+  wdc_80_medium_seen:
+    adapter: wdc
+    directory: wdc/80pair
+    train: wdcproducts80cc20rnd000un_train_medium.json.gz
+    valid: wdcproducts80cc20rnd000un_valid_medium.json.gz
+    test: wdcproducts80cc20rnd000un_gs.json.gz
+    tier: should
+    preregistration: secondary
+    rationale: "Matched control differing from the primary only in unseen-entity exposure."
+
+serialization:
+  format: "[COL] {field} [VAL] {value}"
+  missing_token: ""
+  max_chars_per_field: 2000
+
+structured_features:
+  fields: [title, name, brand, manufacturer, modelno, price, priceCurrency, description]
+  groups:
+    lexical: [title_jaccard, title_char_ratio, description_jaccard, all_token_jaccard]
+    numeric: [price_similarity, numeric_token_jaccard]
+    categorical: [brand_exact, manufacturer_exact, currency_exact, model_exact]
+    availability: [left_field_fraction, right_field_fraction, shared_field_fraction]
+
+frozen_backbones:
+  - id: sentence-transformers/all-roberta-large-v1
+    revision: cf74d8acd4f198de950bf004b262e6accfed5d2c
+    pooling: mean
+    normalize: true
+    symmetric_prefix: ""
+    max_length: 256
+  - id: sentence-transformers/all-MiniLM-L6-v2
+    revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+    pooling: mean
+    normalize: true
+    symmetric_prefix: ""
+    max_length: 256
+  - id: intfloat/e5-base-v2
+    revision: f52bf8ec8c7124536f0efb74aca902b2995e5bcd
+    pooling: mean
+    normalize: true
+    symmetric_prefix: "query: "
+    max_length: 512
+  - id: BAAI/bge-base-en-v1.5
+    revision: a5beb1e3e68b9ab74eb54cfd186867f64f240e1a
+    pooling: cls
+    normalize: true
+    symmetric_prefix: ""
+    max_length: 512
+  - id: Alibaba-NLP/gte-base-en-v1.5
+    revision: a829fd0e060bb84554da0dfd354d0de0f7712b7f
+    pooling: cls
+    normalize: true
+    symmetric_prefix: ""
+    max_length: 512
+    trust_remote_code: true
+
+cross_encoder:
+  id: FacebookAI/roberta-base
+  revision: e2da8e2f811d1448a5b465c236feacd80ffbac7b
+  objective: binary_cross_entropy
+  serialization: ditto_col_val
+  max_length: 256
+  learning_rates: [1.0e-5, 2.0e-5, 3.0e-5]
+  epochs: 20
+  early_stopping_patience: 5
+  selection_split: validation_only
+
+exp02_jina_cross_encoder:
+  id: jinaai/jina-reranker-v2-base-multilingual
+  revision: 9cfeff2df7d40d1b78e75e5e9cebec92a99813c9
+  license: CC-BY-NC-4.0
+  usage: research_and_evaluation
+  task_fine_tuning: none
+  max_length: 1024
+  dtype: float16
+  target_memory_gib: 20
+  maximum_memory_fraction: 0.92
+  batch_selection: measured_longest_pair_calibration_then_adaptive
+
+experiments:
+  exp01_pair_classification:
+    scope: exp01_all
+    primary_backbone: intfloat/e5-base-v2
+    gpu_compute: ml.g5.12xlarge
+    gpu_count: 4
+    cpu_compute: ml.m5.2xlarge
+    tier: must
+  exp02_candidate_ranking:
+    scope: exp01_all
+    compute: gpu
+    tier: should
+    k: [20, 50, 100]
+    retrieval: dense_e5_label_blind
+    primary_k: 100
+    query_split: official_for_wdc_and_link_lives_hash_grouped_for_deepmatcher
+    candidate_pool_policy: backbone_specific_label_blind_top100
+    comparison_policy: rerankers_are_compared_only_within_the_same_backbone_pool
+    rank_objective: lambdarank
+    rank_metric: ndcg
+    candidate_recall_reported_separately: true
+    conditional_reranking_metrics: [mrr, hits_at_1, hits_at_5, hits_at_10, hits_at_100, ndcg]
+    end_to_end_metrics: [mrr, hits_at_20, hits_at_50, hits_at_100]
+  exp03_fusion_learner_ablation:
+    compute: cpu
+    tier: must
+    fixed_backbone: intfloat/e5-base-v2
+    learners: [equal_fusion, validation_convex, logistic, hist_gradient_boosting, lambdarank]
+    classification_metric: f1
+    ranking_metric: mrr_at_100
+    paired_units:
+      classification: test_pair
+      ranking: test_query
+  exp04_backbone_transfer:
+    compute: gpu
+    tier: should
+  exp05_label_efficiency:
+    compute: cpu
+    tier: should
+    fractions:
+      - 0.01
+      - 0.02
+      - 0.03
+      - 0.04
+      - 0.05
+      - 0.10
+      - 0.15
+      - 0.20
+      - 0.25
+      - 0.30
+      - 0.35
+      - 0.40
+      - 0.45
+      - 0.50
+      - 0.55
+      - 0.60
+      - 0.65
+      - 0.70
+      - 0.75
+      - 0.80
+      - 0.85
+      - 0.90
+      - 0.95
+      - 1.00
+    subset_policy: deterministic_nested_left_record_groups
+    subset_seed: 20260725
+    identical_subsets_across_methods_and_seeds: true
+  exp06_evidence_ablation:
+    compute: cpu
+    tier: must
+  exp07_controlled_field_masking:
+    compute: cpu
+    tier: must
+    probabilities: [0.0, 0.1, 0.3, 0.5, 0.7]
+  exp08_efficiency:
+    compute: both
+    tier: should

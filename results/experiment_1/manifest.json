@@ -1,0 +1,34 @@
+{
+  "package": "Paper1 Experiment 1 canonical classification results",
+  "status": "complete",
+  "configuration_count": 47,
+  "model_dataset_cells": 282,
+  "legacy_files_included": false,
+  "files": [
+    {
+      "name": "EXPERIMENT_1_FINAL.md",
+      "bytes": 1993,
+      "sha256": "f2ee5f7a4226289f08a81cf0d13fc55d2f1c996267d0c2c9f9dea18d39dbe672"
+    },
+    {
+      "name": "Experiment_1_Classification_Results.xlsx",
+      "bytes": 13392,
+      "sha256": "4ab2ab921eb8f31226765db20e0604ee9ad684ee090f2b03ab5fc43535191119"
+    },
+    {
+      "name": "experiment_1_completeness.json",
+      "bytes": 1096,
+      "sha256": "104757d868c3da4915a2155f1cbc0f7457fe24a83559db96a41dda4dc999dfc6"
+    },
+    {
+      "name": "experiment_1_results.csv",
+      "bytes": 11014,
+      "sha256": "e5a61b919100c3e4476115d156d0d7e4ab1ac10249d78e8ef9d163a8d82c784e"
+    },
+    {
+      "name": "experiment_1_results_long.csv",
+      "bytes": 27872,
+      "sha256": "7f88f75fc9e5430ff079e23dec7bda42c85ec6f8370f2633aab81e5e0ed0877f"
+    }
+  ]
+}

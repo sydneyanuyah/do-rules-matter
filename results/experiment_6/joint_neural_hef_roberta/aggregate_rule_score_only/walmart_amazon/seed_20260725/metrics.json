@@ -1,0 +1,148 @@
+{
+  "condition": "aggregate_rule_score_only",
+  "dataset": "walmart_amazon",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.8702290076335878,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9210650672482734,
+        "ndcg": 0.9362109243072744,
+        "queries": 131
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.8702290076335878,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9210650672482734,
+        "ndcg": 0.9362109243072744,
+        "queries": 131
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8702290076335878,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9210650672482734,
+        "ndcg": 0.9362109243072744,
+        "queries": 131
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7899159663865546,
+        "hits_at_10": 0.9831932773109243,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9411764705882353,
+        "mrr": 0.857183144751113,
+        "ndcg": 0.8837956792174204,
+        "queries": 119
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7899159663865546,
+        "hits_at_10": 0.9831932773109243,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9411764705882353,
+        "mrr": 0.857183144751113,
+        "ndcg": 0.8837956792174204,
+        "queries": 119
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7899159663865546,
+        "hits_at_10": 0.9831932773109243,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9411764705882353,
+        "mrr": 0.857183144751113,
+        "ndcg": 0.8837956792174204,
+        "queries": 119
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    }
+  },
+  "runtime_seconds": 25.119262218475342,
+  "score_integrity": {
+    "degenerate_test_scores": true,
+    "test_unique_values": 1,
+    "valid_unique_values": 1
+  },
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": false,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09375,
+        "positives": 576,
+        "rows": 6144
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "validation_f1": 0.17216770740410348
+    }
+  ]
+}

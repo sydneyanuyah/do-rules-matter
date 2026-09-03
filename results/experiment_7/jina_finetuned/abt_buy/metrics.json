@@ -1,0 +1,402 @@
+{
+  "cold_end_to_end_seconds": 46.88149785899441,
+  "dataset": "abt_buy",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "jina_finetuned",
+  "model_load_seconds": 5.252152223998564,
+  "scenarios": [
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.9415584415584416,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.9653679653679655,
+        "mrr_retention": 1.0,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "neural_inference": 41.629257070002495
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2284765184,
+        "rss_start_bytes": 1775194112,
+        "seconds": 41.62934563499584
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 6911,
+        "mask_sha256": "11d12269238743a90c6f3e50265c000b85d5fd0ad1f7bfc796426bc87388e451",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 265
+      },
+      "metrics": {
+        "hits_at_1": 0.9025974025974026,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9586206896551724,
+        "mrr_at_100": 0.9295866831581118,
+        "mrr_retention": 0.9629350843476403,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "neural_inference": 40.36434485799691
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2297876480,
+        "rss_start_bytes": 2291597312,
+        "seconds": 40.364457869989565
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 7601,
+        "mask_sha256": "8e82833aab7de8c6e167c709ab7a31174fe604ecd6d1ed0490c6b83af575c858",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 265
+      },
+      "metrics": {
+        "hits_at_1": 0.8571428571428571,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9103448275862068,
+        "mrr_at_100": 0.8947159515448697,
+        "mrr_retention": 0.9268133847841474,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "neural_inference": 39.83455845298886
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300616704,
+        "rss_start_bytes": 2297974784,
+        "seconds": 39.83463852800196
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 6926,
+        "mask_sha256": "fc7660161fe3ad95d007d8ca12ffeb26f96e23947a545469ab12079586a888f3",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 252
+      },
+      "metrics": {
+        "hits_at_1": 0.8636363636363636,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.9172413793103448,
+        "mrr_at_100": 0.9002913620237928,
+        "mrr_retention": 0.9325888099887717,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "neural_inference": 40.19984866300365
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300862464,
+        "rss_start_bytes": 2300612608,
+        "seconds": 40.199957263001124
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 20799,
+        "mask_sha256": "5c5c218b5c6c99682c289d4e8b74d832aa1dc367df8fbef03b52718026e4bba1",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 795
+      },
+      "metrics": {
+        "hits_at_1": 0.7012987012987013,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.7448275862068965,
+        "mrr_at_100": 0.7607852542437286,
+        "mrr_retention": 0.7880779987905886,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "neural_inference": 36.57863304599596
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300993536,
+        "rss_start_bytes": 2300858368,
+        "seconds": 36.578716652002186
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 22251,
+        "mask_sha256": "67b90ac6b371f93ab46a8e528acb1df353ab78a899eeca042aeae24e3341522b",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 819
+      },
+      "metrics": {
+        "hits_at_1": 0.6168831168831169,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.6551724137931034,
+        "mrr_at_100": 0.6633956144510799,
+        "mrr_retention": 0.6871945602609839,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "neural_inference": 36.28609958899324
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2301124608,
+        "rss_start_bytes": 2300989440,
+        "seconds": 36.28620399499778
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 22939,
+        "mask_sha256": "f41e3fa21359f876172b353105d1783642fbcb0c009c7a7d6db9304978add0d1",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 813
+      },
+      "metrics": {
+        "hits_at_1": 0.6298701298701299,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.6689655172413793,
+        "mrr_at_100": 0.6870756184125594,
+        "mrr_retention": 0.7117240710910367,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "neural_inference": 36.33473504600988
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6218470400,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2301128704,
+        "rss_start_bytes": 2301124608,
+        "seconds": 36.33483098000579
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 35945,
+        "mask_sha256": "115c478cfaa430174ab294ad627ca36f79c30ffe1cd7252718cf0506b83f9f2e",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1366
+      },
+      "metrics": {
+        "hits_at_1": 0.38961038961038963,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.41379310344827586,
+        "mrr_at_100": 0.4509841558774172,
+        "mrr_retention": 0.4671629596757101,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "neural_inference": 31.362569914999767
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300096512,
+        "rss_start_bytes": 2300092416,
+        "seconds": 31.36264508300519
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 36664,
+        "mask_sha256": "630ee34dba5e609c238a9fc6404fcc299d0616ba6824ab13bcdea0d39cada237",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1366
+      },
+      "metrics": {
+        "hits_at_1": 0.33766233766233766,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.3586206896551724,
+        "mrr_at_100": 0.41195529420660343,
+        "mrr_retention": 0.4267339594696205,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "neural_inference": 30.7914905630023
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 6230554112,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300166144,
+        "rss_start_bytes": 2300096512,
+        "seconds": 30.791559518998838
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 38957,
+        "mask_sha256": "b9668e9454a86cbaff8d18ec74cb7fcf64772da9ae77a36d040d9fd8fa6cca51",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1390
+      },
+      "metrics": {
+        "hits_at_1": 0.35064935064935066,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.37241379310344824,
+        "mrr_at_100": 0.42089984592929125,
+        "mrr_retention": 0.4359993919715976,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "neural_inference": 31.036137050992693
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5392455168,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300407808,
+        "rss_start_bytes": 2300403712,
+        "seconds": 31.036320183004136
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 51212,
+        "mask_sha256": "53d1d7e8cba23a70818e7436f1172343863ef35cc8b472e3b1b36a8765661c84",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1866
+      },
+      "metrics": {
+        "hits_at_1": 0.18831168831168832,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.2,
+        "mrr_at_100": 0.2984445291741252,
+        "mrr_retention": 0.30915105936871257,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "neural_inference": 26.681361661991104
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5890097152,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300407808,
+        "rss_start_bytes": 2300403712,
+        "seconds": 26.68145907500002
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 53288,
+        "mask_sha256": "f31a759e4265ed9433bd5547709aa05bfcbbed4bbcf32df3a2b84ec0ea082448",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1914
+      },
+      "metrics": {
+        "hits_at_1": 0.22727272727272727,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.24137931034482757,
+        "mrr_at_100": 0.310757939898815,
+        "mrr_retention": 0.3219062068010146,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "neural_inference": 24.39170866299537
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5402720256,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300407808,
+        "rss_start_bytes": 2300403712,
+        "seconds": 24.39185266100685
+      }
+    },
+    {
+      "dataset": "abt_buy",
+      "mask": {
+        "affected_pair_cells": 53425,
+        "mask_sha256": "7f3c89b5bdbc2262e680e297c30db0f951082173b93d5e6be40269c8327425b7",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1916
+      },
+      "metrics": {
+        "hits_at_1": 0.2077922077922078,
+        "hits_at_100": 1.0,
+        "hits_at_1_retention": 0.2206896551724138,
+        "mrr_at_100": 0.3118215507960611,
+        "mrr_retention": 0.32300797414300497,
+        "queries": 154
+      },
+      "model": "jina_finetuned",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "neural_inference": 25.20802709700365
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 5261241856,
+        "gpu_peak_reserved_bytes": 7136608256,
+        "rss_peak_bytes": 2300407808,
+        "rss_start_bytes": 2300403712,
+        "seconds": 25.208170094003435
+      }
+    }
+  ],
+  "serialized_model_bytes": 3392899311,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

@@ -1,0 +1,441 @@
+{
+  "cold_end_to_end_seconds": 541.7011882100196,
+  "dataset": "wdc_80_medium_unseen",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "hef_gbdt_e5_jina_oof",
+  "model_load_seconds": 5.3936032760102535,
+  "scenarios": [
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.838,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.8914444444444445,
+        "mrr_retention": 1.0,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "cached_fusion": 0.11581678499351256,
+        "e5_encoding": 201.2905577979982,
+        "structured_features": 14.794058601008146,
+        "task_neural_inference": 320.10562511900207
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 2931920896,
+        "rss_start_bytes": 1799745536,
+        "seconds": 536.3075849340094
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 37935,
+        "mask_sha256": "9060db2c31f14b3335e0253d96b7db11f61e733637058b988a787569b39efa15",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 566
+      },
+      "metrics": {
+        "hits_at_1": 0.762,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.9093078758949881,
+        "mrr_at_100": 0.82806032037148,
+        "mrr_retention": 0.9288972807357996,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "cached_fusion": 0.0923407340014819,
+        "e5_encoding": 182.43729869401432,
+        "structured_features": 13.37909021100495,
+        "task_neural_inference": 310.84955200200784
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3184582656,
+        "rss_start_bytes": 2740924416,
+        "seconds": 506.7593641199928
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 43141,
+        "mask_sha256": "70ef2da874628f797cbb6082aeb8c2de956600d856208b12b49be8b523506258",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 646
+      },
+      "metrics": {
+        "hits_at_1": 0.722,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.8615751789976134,
+        "mrr_at_100": 0.7965632017722937,
+        "mrr_retention": 0.893564603758026,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "cached_fusion": 0.06814933399436995,
+        "e5_encoding": 178.0032856510079,
+        "structured_features": 12.606257812993135,
+        "task_neural_inference": 306.6732991559984
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3188375552,
+        "rss_start_bytes": 2751913984,
+        "seconds": 497.3525900930108
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 38671,
+        "mask_sha256": "3f24b7b392fd9ff517908132656f78fc8d3085b5c4ca26aa2306a7bd79663181",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 576
+      },
+      "metrics": {
+        "hits_at_1": 0.742,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.8854415274463008,
+        "mrr_at_100": 0.8137901361211802,
+        "mrr_retention": 0.9128893462658135,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "cached_fusion": 0.0674442919989815,
+        "e5_encoding": 183.42862386599882,
+        "structured_features": 13.193658672011225,
+        "task_neural_inference": 309.63991637699655
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3193823232,
+        "rss_start_bytes": 2743373824,
+        "seconds": 506.331318490993
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 118586,
+        "mask_sha256": "6c2c67099a6250628f36dfe344be65f0566d042aea36a532f66cf3fb2927bfc0",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1774
+      },
+      "metrics": {
+        "hits_at_1": 0.58,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.6921241050119331,
+        "mrr_at_100": 0.6509547370066899,
+        "mrr_retention": 0.7302246831684169,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "cached_fusion": 0.06926465699507389,
+        "e5_encoding": 144.10889484699874,
+        "structured_features": 9.969207749993075,
+        "task_neural_inference": 291.0533528209926
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3187183616,
+        "rss_start_bytes": 2756632576,
+        "seconds": 445.2024514520017
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 121713,
+        "mask_sha256": "b4af4d393a02f9fe166b5ece43884d49b362806bb5e942b020a5798ed294e6c2",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1842
+      },
+      "metrics": {
+        "hits_at_1": 0.554,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.6610978520286397,
+        "mrr_at_100": 0.6295615691365712,
+        "mrr_retention": 0.7062263644807605,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "cached_fusion": 0.06892737299494911,
+        "e5_encoding": 144.55919670299045,
+        "structured_features": 9.65872318300535,
+        "task_neural_inference": 288.97488489499665
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3186462720,
+        "rss_start_bytes": 2798895104,
+        "seconds": 443.26324221800314
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 118851,
+        "mask_sha256": "460ae3f1026eac5b10cbf4a99ad933ac659529259062ceac235d6c741fbe7a6a",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1724
+      },
+      "metrics": {
+        "hits_at_1": 0.572,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.6825775656324582,
+        "mrr_at_100": 0.646835487916207,
+        "mrr_retention": 0.7256038129435203,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "cached_fusion": 0.07074074099364225,
+        "e5_encoding": 147.67424332999508,
+        "structured_features": 10.212812825993751,
+        "task_neural_inference": 293.3278594260046
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185676288,
+        "rss_start_bytes": 2798895104,
+        "seconds": 451.2872242859885
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 198601,
+        "mask_sha256": "02984529399ed4b6b06661cf8d4b1ca1bfb245d20aae414ae7635d27a1de803c",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 2957
+      },
+      "metrics": {
+        "hits_at_1": 0.354,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.4224343675417661,
+        "mrr_at_100": 0.42845013289467954,
+        "mrr_retention": 0.4806246037706738,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "cached_fusion": 0.07042448800348211,
+        "e5_encoding": 108.87452319500153,
+        "structured_features": 7.198158175000572,
+        "task_neural_inference": 271.395972015991
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185414144,
+        "rss_start_bytes": 2798895104,
+        "seconds": 387.54061576099775
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 202760,
+        "mask_sha256": "6e572f4e1510bdb9527558c8440e21f8915bd39d5fa28448c2f1d9a7904dff6b",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 3044
+      },
+      "metrics": {
+        "hits_at_1": 0.374,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.44630071599045346,
+        "mrr_at_100": 0.4538643177877665,
+        "mrr_retention": 0.5091335984157919,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "cached_fusion": 0.06388320900441613,
+        "e5_encoding": 105.19333484700473,
+        "structured_features": 6.906195784002193,
+        "task_neural_inference": 268.24205274900305
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185610752,
+        "rss_start_bytes": 2816397312,
+        "seconds": 380.4067168929905
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 196805,
+        "mask_sha256": "48959ed79f26e7e5c1d8b2145db3d249cc2a326aed5e5ec1140f1621832ed2cd",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 2887
+      },
+      "metrics": {
+        "hits_at_1": 0.376,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.44868735083532224,
+        "mrr_at_100": 0.4540980678117476,
+        "mrr_retention": 0.5093958133249069,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "cached_fusion": 0.07000500099093188,
+        "e5_encoding": 110.37444708299881,
+        "structured_features": 7.328059874009341,
+        "task_neural_inference": 272.56893567100633
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185741824,
+        "rss_start_bytes": 2799222784,
+        "seconds": 390.343112225004
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 279092,
+        "mask_sha256": "0523f6c38e9d45cd4b2119d8b07b880e6b093c56f751e44b43019163355cbc78",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 4170
+      },
+      "metrics": {
+        "hits_at_1": 0.234,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.27923627684964203,
+        "mrr_at_100": 0.3322356052600883,
+        "mrr_retention": 0.372693561927059,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "cached_fusion": 0.0671292469924083,
+        "e5_encoding": 70.38848442600283,
+        "structured_features": 4.8161834869970335,
+        "task_neural_inference": 251.20876871500514
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185741824,
+        "rss_start_bytes": 2799222784,
+        "seconds": 326.4820035970042
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 277682,
+        "mask_sha256": "4893b35701a9e1674a1590d8717b9df495f0b3088d41de5a2956cef6030dadef",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 4197
+      },
+      "metrics": {
+        "hits_at_1": 0.234,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.27923627684964203,
+        "mrr_at_100": 0.3294302076771587,
+        "mrr_retention": 0.3695465373419454,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "cached_fusion": 0.07012987000052817,
+        "e5_encoding": 67.39030194799125,
+        "structured_features": 4.782599817990558,
+        "task_neural_inference": 245.19055274200218
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185741824,
+        "rss_start_bytes": 2803945472,
+        "seconds": 317.4353154870041
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_unseen",
+      "mask": {
+        "affected_pair_cells": 270122,
+        "mask_sha256": "332146b8769a4eabb44f7a516e63d38392b4d58682e9de7d719fc4d49ca6fc12",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 4027
+      },
+      "metrics": {
+        "hits_at_1": 0.236,
+        "hits_at_100": 0.996,
+        "hits_at_1_retention": 0.28162291169451076,
+        "mrr_at_100": 0.32683525490494886,
+        "mrr_retention": 0.3666355844627371,
+        "queries": 500
+      },
+      "model": "hef_gbdt_e5_jina_oof",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "cached_fusion": 0.062128346995450556,
+        "e5_encoding": 75.21917026600568,
+        "structured_features": 5.076219302005484,
+        "task_neural_inference": 250.51379140999052
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 8982775296,
+        "gpu_peak_reserved_bytes": 11045699584,
+        "rss_peak_bytes": 3185872896,
+        "rss_start_bytes": 2799353856,
+        "seconds": 330.87273008099874
+      }
+    }
+  ],
+  "serialized_model_bytes": 3393645008,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

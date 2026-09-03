@@ -1,0 +1,155 @@
+{
+  "condition": "raw_field_features_only",
+  "dataset": "abt_buy",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7922077922077922,
+        "hits_at_10": 0.9805194805194806,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.974025974025974,
+        "mrr": 0.8749641396962825,
+        "ndcg": 0.9054430730848251,
+        "queries": 154
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 154,
+      "total_queries": 154
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.8116883116883117,
+        "hits_at_10": 0.987012987012987,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9805194805194806,
+        "mrr": 0.8865839517625231,
+        "ndcg": 0.914601363954144,
+        "queries": 154
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 154,
+      "total_queries": 154
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8051948051948052,
+        "hits_at_10": 0.987012987012987,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.974025974025974,
+        "mrr": 0.8818917883358877,
+        "ndcg": 0.9107864970786621,
+        "queries": 154
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 154,
+      "total_queries": 154
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7891156462585034,
+        "hits_at_10": 0.9931972789115646,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9659863945578231,
+        "mrr": 0.8736039470733349,
+        "ndcg": 0.9049755471054767,
+        "queries": 147
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 147,
+      "total_queries": 147
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7959183673469388,
+        "hits_at_10": 0.9931972789115646,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9863945578231292,
+        "mrr": 0.8822693179836036,
+        "ndcg": 0.9118861498544255,
+        "queries": 147
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 147,
+      "total_queries": 147
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7891156462585034,
+        "hits_at_10": 0.9931972789115646,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9863945578231292,
+        "mrr": 0.8746243552366002,
+        "ndcg": 0.9058990886783911,
+        "queries": 147
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 147,
+      "total_queries": 147
+    }
+  },
+  "runtime_seconds": 34.76430916786194,
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": false,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.10751565762004175,
+        "positives": 206,
+        "rows": 1916
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.10726101340762667,
+        "positives": 616,
+        "rows": 5743
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.10751565762004175,
+        "positives": 206,
+        "rows": 1916
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 49,
+      "learning_rate": 0.001,
+      "validation_f1": 0.5536062378167641
+    }
+  ]
+}

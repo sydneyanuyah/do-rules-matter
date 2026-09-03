@@ -1,0 +1,118 @@
+{
+  "experiment": "Experiment 3 — expanded fusion/model comparison",
+  "status": "complete",
+  "configuration_count": 47,
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen",
+    "link_lives_release2"
+  ],
+  "seeds": [
+    20260725,
+    20260726,
+    20260727
+  ],
+  "per_run_metric_rows": 5652,
+  "summary_rows": 2164,
+  "missing_applicable_cells": 0,
+  "neural_expansion": {
+    "joint_neural_configurations": 7,
+    "oof_neural_hef_configurations": 2,
+    "classification_joint_cells": 126,
+    "ranking_joint_cells": 126,
+    "classification_oof_cells": 36,
+    "ranking_oof_cells": 36,
+    "coverage": {
+      "hef_e5_tuned_roberta": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_bert": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_bge": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_e5": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_gte": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_jina": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_minilm": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "joint_neural_roberta": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      },
+      "hef_e5_tuned_jina": {
+        "classification_primary_cells": 6,
+        "ranking_primary_cells": 6
+      }
+    }
+  },
+  "test_policy": "reuse validation-selected locked predictions; no test-time selection",
+  "leakage_policy": "task-trained neural evidence uses record/query-grouped OOF predictions where a meta-learner is fitted",
+  "std_policy": "sample SD (n-1); blank for deterministic single-run methods",
+  "canonical_s3_root": "artifacts",
+  "files": [
+    {
+      "name": "EXPERIMENT_3_FINAL.md",
+      "bytes": 1581,
+      "sha256": "01a43c7438c8b09fae60f5bc2469d2ae8bafd3f8df7f29b2b7a10639a2b1b03a"
+    },
+    {
+      "name": "Experiment_3_Complete_Results.xlsx",
+      "bytes": 438230,
+      "sha256": "87b81b6bedea2e1a422a72accffd61b61a46e582450ed6bdc70268b1b73073e8"
+    },
+    {
+      "name": "classification_f1_wide.csv",
+      "bytes": 11920,
+      "sha256": "9222619cdc9d819402b12ed717e3dd048b25f9a037e09484c44d0a05858927bf"
+    },
+    {
+      "name": "configuration_registry.json",
+      "bytes": 8530,
+      "sha256": "1b691c8c5799b26fcfc426afde517eae385d7452dce71ff437792ff62adc21bd"
+    },
+    {
+      "name": "missing_cells.csv",
+      "bytes": 37,
+      "sha256": "1c90f37242fc6cb68c21927a545473f46706dcc532636e9d6a8e9be4fdab5a94"
+    },
+    {
+      "name": "per_run_metrics.csv",
+      "bytes": 1520714,
+      "sha256": "17273c70ce555ac843d3e118e77d12cde245fb4071b7ddcc0abcc2fddfdab218"
+    },
+    {
+      "name": "ranking_hits_at_100_wide.csv",
+      "bytes": 5106,
+      "sha256": "f9ca2e0926271247baac760d85769970d31c8da1469358555c45b080f095880c"
+    },
+    {
+      "name": "ranking_mrr_at_100_wide.csv",
+      "bytes": 11655,
+      "sha256": "7d6e92f5af065c8b6106997279da67d1ed3dca7c05b8ae2b6204fcb8f56b4c60"
+    },
+    {
+      "name": "summary_long.csv",
+      "bytes": 342600,
+      "sha256": "f7534fcf66dd1c58327a33497865a80af0a6308eed4719583c86ea0947db931a"
+    }
+  ]
+}

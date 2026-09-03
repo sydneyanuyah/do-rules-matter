@@ -1,0 +1,30 @@
+{
+  "dataset": "abt_buy",
+  "mask": {
+    "affected_pair_cells": 51212,
+    "mask_sha256": "53d1d7e8cba23a70818e7436f1172343863ef35cc8b472e3b1b36a8765661c84",
+    "probability": 0.7,
+    "seed": 20260725,
+    "unique_record_fields_masked": 1866
+  },
+  "metrics": {
+    "hits_at_1": 0.18831168831168832,
+    "hits_at_100": 1.0,
+    "hits_at_1_retention": 0.2,
+    "mrr_at_100": 0.2984445291741252,
+    "mrr_retention": 0.30915105936871257,
+    "queries": 154
+  },
+  "model": "jina_finetuned",
+  "scenario": "p70_seed20260725",
+  "stages": {
+    "neural_inference": 26.681361661991104
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 5890097152,
+    "gpu_peak_reserved_bytes": 7136608256,
+    "rss_peak_bytes": 2300407808,
+    "rss_start_bytes": 2300403712,
+    "seconds": 26.68145907500002
+  }
+}

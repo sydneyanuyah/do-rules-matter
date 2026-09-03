@@ -1,0 +1,378 @@
+[
+  {
+    "order": 1,
+    "config_id": "rules",
+    "label": "Rules",
+    "family": "deterministic",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 2,
+    "config_id": "embedding_e5",
+    "label": "E5",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 3,
+    "config_id": "embedding_minilm",
+    "label": "MiniLM",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 4,
+    "config_id": "embedding_bge",
+    "label": "BGE",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 5,
+    "config_id": "embedding_gte",
+    "label": "GTE",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 6,
+    "config_id": "embedding_roberta",
+    "label": "RoBERTa embedding",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 7,
+    "config_id": "embedding_bert",
+    "label": "BERT embedding",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 8,
+    "config_id": "embedding_jina",
+    "label": "Jina embedding",
+    "family": "frozen_embedding",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 9,
+    "config_id": "equal_fusion_e5",
+    "label": "Equal fusion + E5",
+    "family": "scalar_fusion",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 10,
+    "config_id": "convex_fusion_e5",
+    "label": "Convex fusion + E5",
+    "family": "scalar_fusion",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 11,
+    "config_id": "hef_linear_e5",
+    "label": "HEF-linear + E5",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 12,
+    "config_id": "hef_linear_minilm",
+    "label": "HEF-linear + MiniLM",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 13,
+    "config_id": "hef_linear_bge",
+    "label": "HEF-linear + BGE",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 14,
+    "config_id": "hef_linear_gte",
+    "label": "HEF-linear + GTE",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 15,
+    "config_id": "hef_linear_roberta",
+    "label": "HEF-linear + RoBERTa embedding",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 16,
+    "config_id": "hef_linear_bert",
+    "label": "HEF-linear + BERT embedding",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 17,
+    "config_id": "hef_linear_jina",
+    "label": "HEF-linear + Jina embedding",
+    "family": "hef_linear",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 18,
+    "config_id": "hef_gbdt_e5",
+    "label": "HEF-GBDT + E5",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 19,
+    "config_id": "hef_gbdt_minilm",
+    "label": "HEF-GBDT + MiniLM",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 20,
+    "config_id": "hef_gbdt_bge",
+    "label": "HEF-GBDT + BGE",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 21,
+    "config_id": "hef_gbdt_gte",
+    "label": "HEF-GBDT + GTE",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 22,
+    "config_id": "hef_gbdt_roberta",
+    "label": "HEF-GBDT + RoBERTa embedding",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 23,
+    "config_id": "hef_gbdt_bert",
+    "label": "HEF-GBDT + BERT embedding",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 24,
+    "config_id": "hef_gbdt_jina",
+    "label": "HEF-GBDT + Jina embedding",
+    "family": "hef_gbdt",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 25,
+    "config_id": "jina_zero_shot",
+    "label": "Jina zero-shot",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 26,
+    "config_id": "jina_finetuned",
+    "label": "Jina fine-tuned",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 27,
+    "config_id": "tuned_roberta",
+    "label": "Tuned RoBERTa",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 28,
+    "config_id": "ditto_style_mixda",
+    "label": "Ditto-style RoBERTa + MixDA",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 29,
+    "config_id": "official_ditto_plain",
+    "label": "Official Ditto",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 30,
+    "config_id": "official_ditto_mixda",
+    "label": "Official Ditto + MixDA",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 31,
+    "config_id": "anymatch",
+    "label": "AnyMatch",
+    "family": "neural_em",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 32,
+    "config_id": "hef_gbdt_mixda_e5",
+    "label": "HEF-GBDT + MixDA-style augmentation + E5",
+    "family": "mixda_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 33,
+    "config_id": "hef_gbdt_mixda_jina",
+    "label": "HEF-GBDT + MixDA-style augmentation + Jina embedding",
+    "family": "mixda_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 34,
+    "config_id": "hef_gbdt_mixda_roberta",
+    "label": "HEF-GBDT + MixDA-style augmentation + RoBERTa embedding",
+    "family": "mixda_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 35,
+    "config_id": "hef_gbdt_mixda_bert",
+    "label": "HEF-GBDT + MixDA-style augmentation + BERT embedding",
+    "family": "mixda_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 36,
+    "config_id": "hef_e5_jina_zero_shot",
+    "label": "HEF-GBDT + E5 + Jina zero-shot",
+    "family": "cross_evidence",
+    "classification": true,
+    "ranking": false
+  },
+  {
+    "order": 37,
+    "config_id": "hef_e5_tuned_roberta",
+    "label": "HEF-GBDT + E5 + fine-tuned RoBERTa (OOF)",
+    "family": "neural_hef_oof",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 38,
+    "config_id": "hef_e5_official_ditto",
+    "label": "HEF-GBDT + E5 + Official Ditto",
+    "family": "cross_evidence",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 39,
+    "config_id": "hef_e5_official_ditto_mixda",
+    "label": "HEF-GBDT + E5 + Official Ditto + MixDA",
+    "family": "cross_evidence",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 40,
+    "config_id": "joint_neural_bert",
+    "label": "Joint neural HEF + BERT (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 41,
+    "config_id": "joint_neural_bge",
+    "label": "Joint neural HEF + BGE (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 42,
+    "config_id": "joint_neural_e5",
+    "label": "Joint neural HEF + E5 (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 43,
+    "config_id": "joint_neural_gte",
+    "label": "Joint neural HEF + GTE (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 44,
+    "config_id": "joint_neural_jina",
+    "label": "Joint neural HEF + Jina (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 45,
+    "config_id": "joint_neural_minilm",
+    "label": "Joint neural HEF + MiniLM (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 46,
+    "config_id": "joint_neural_roberta",
+    "label": "Joint neural HEF + RoBERTa (fine-tuned)",
+    "family": "joint_neural_hef",
+    "classification": true,
+    "ranking": true
+  },
+  {
+    "order": 47,
+    "config_id": "hef_e5_tuned_jina",
+    "label": "HEF-GBDT + E5 + fine-tuned Jina (OOF)",
+    "family": "neural_hef_oof",
+    "classification": true,
+    "ranking": true
+  }
+]

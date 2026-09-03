@@ -1,0 +1,31 @@
+{
+  "dataset": "walmart_amazon",
+  "mask": {
+    "affected_pair_cells": 71727,
+    "mask_sha256": "91450a1c83df9187fd836de59fe2ece4e3f24c76884394495f5ef3a1c5e01a5f",
+    "probability": 0.7,
+    "seed": 20260725,
+    "unique_record_fields_masked": 21675
+  },
+  "metrics": {
+    "hits_at_1": 0.26717557251908397,
+    "hits_at_100": 1.0,
+    "hits_at_1_retention": 0.282258064516129,
+    "mrr_at_100": 0.3379766768129441,
+    "mrr_retention": 0.35059687219943325,
+    "queries": 131
+  },
+  "model": "joint_neural_hef_jina",
+  "scenario": "p70_seed20260725",
+  "stages": {
+    "joint_neural_inference": 2.2731358480086783,
+    "structured_features": 2.2731358480086783
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 3963968512,
+    "gpu_peak_reserved_bytes": 4387241984,
+    "rss_peak_bytes": 5633941504,
+    "rss_start_bytes": 5633937408,
+    "seconds": 16.38306241700775
+  }
+}

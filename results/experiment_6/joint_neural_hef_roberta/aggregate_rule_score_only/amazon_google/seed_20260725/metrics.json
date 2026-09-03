@@ -1,0 +1,148 @@
+{
+  "condition": "aggregate_rule_score_only",
+  "dataset": "amazon_google",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7975460122699386,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9693251533742331,
+        "mrr": 0.8738271382172501,
+        "ndcg": 0.9030430936089522,
+        "queries": 163
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7975460122699386,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9693251533742331,
+        "mrr": 0.8738271382172501,
+        "ndcg": 0.9031017098357781,
+        "queries": 163
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7975460122699386,
+        "hits_at_10": 0.9938650306748467,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9693251533742331,
+        "mrr": 0.8738271382172501,
+        "ndcg": 0.9030430936089522,
+        "queries": 163
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 163,
+      "total_queries": 163
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7769230769230769,
+        "hits_at_10": 0.9923076923076923,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9769230769230769,
+        "mrr": 0.8601885916016351,
+        "ndcg": 0.8936483988971955,
+        "queries": 130
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 130,
+      "total_queries": 130
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7829457364341085,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9844961240310077,
+        "mrr": 0.8666881998277347,
+        "ndcg": 0.8991575234214649,
+        "queries": 129
+      },
+      "hits_at_20_end_to_end": 0.9923076923076923,
+      "pool_hit": 0.9923076923076923,
+      "pool_hit_queries": 129,
+      "total_queries": 130
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7769230769230769,
+        "hits_at_10": 0.9923076923076923,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9769230769230769,
+        "mrr": 0.8601885916016351,
+        "ndcg": 0.8936483988971955,
+        "queries": 130
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 130,
+      "total_queries": 130
+    }
+  },
+  "runtime_seconds": 21.995599269866943,
+  "score_integrity": {
+    "degenerate_test_scores": true,
+    "test_unique_values": 1,
+    "valid_unique_values": 1
+  },
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": false,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1020497165285652,
+        "positives": 234,
+        "rows": 2293
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1016875181844632,
+        "positives": 699,
+        "rows": 6874
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1020497165285652,
+        "positives": 234,
+        "rows": 2293
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "validation_f1": 0.185199841709537
+    }
+  ]
+}

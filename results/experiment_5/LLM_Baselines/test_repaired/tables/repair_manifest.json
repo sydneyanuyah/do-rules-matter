@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "repair": "Evaluator deduplication key changed from generation_key to (model_slug, generation_key).",
+  "model_dataset_cells": 24,
+  "all_expected_coverage_complete": true,
+  "unique_generation_rows": 406908,
+  "duplicate_keys_within_model": 0,
+  "zero_shot_seed_policy": "One deterministic run when shots=0; three demonstration seeds otherwise."
+}

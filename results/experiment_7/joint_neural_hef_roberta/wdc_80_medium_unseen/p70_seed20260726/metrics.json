@@ -1,0 +1,31 @@
+{
+  "dataset": "wdc_80_medium_unseen",
+  "mask": {
+    "affected_pair_cells": 277682,
+    "mask_sha256": "4893b35701a9e1674a1590d8717b9df495f0b3088d41de5a2956cef6030dadef",
+    "probability": 0.7,
+    "seed": 20260726,
+    "unique_record_fields_masked": 4197
+  },
+  "metrics": {
+    "hits_at_1": 0.152,
+    "hits_at_100": 0.996,
+    "hits_at_1_retention": 0.2367601246105919,
+    "mrr_at_100": 0.2163530362212966,
+    "mrr_retention": 0.2896821407730506,
+    "queries": 500
+  },
+  "model": "joint_neural_hef_roberta",
+  "scenario": "p70_seed20260726",
+  "stages": {
+    "joint_neural_inference": 14.386238049002714,
+    "structured_features": 14.386238049002714
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 7029769216,
+    "gpu_peak_reserved_bytes": 8063549440,
+    "rss_peak_bytes": 5987926016,
+    "rss_start_bytes": 5987921920,
+    "seconds": 382.5407101180026
+  }
+}

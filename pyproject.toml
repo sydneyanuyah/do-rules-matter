@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper1-hef"
+version = "0.1.0"
+description = "Reproducible Learned Hybrid Evidence Fusion experiments for Paper 1"
+requires-python = ">=3.11"
+dependencies = [
+  "joblib>=1.4",
+  "lightgbm==4.6.0",
+  "numpy>=2.0,<2.3",
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.5",
+  "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+gpu = [
+  "accelerate>=1.0",
+  "einops>=0.7,<1",
+  "sentence-transformers>=5.0",
+  "torch>=2.4",
+  "transformers>=4.45",
+]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.8",
+]
+
+[project.scripts]
+paper1-hef = "paper1_hef.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

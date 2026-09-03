@@ -1,0 +1,402 @@
+{
+  "cold_end_to_end_seconds": 121.89975824700377,
+  "dataset": "wdc_80_medium_seen",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "official_ditto_plain",
+  "model_load_seconds": 5.122733115000301,
+  "scenarios": [
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.75,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.8221057777273402,
+        "mrr_retention": 1.0,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "neural_inference": 116.77687810799398
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1925652480,
+        "rss_start_bytes": 1838030848,
+        "seconds": 116.77702513200347
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 40733,
+        "mask_sha256": "474b477c079e9f27fa2dac9cd394dec12eda6b154c7244961d19cebfe172f1ec",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 612
+      },
+      "metrics": {
+        "hits_at_1": 0.644,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.8586666666666667,
+        "mrr_at_100": 0.7277827389808635,
+        "mrr_retention": 0.8852665419683259,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "neural_inference": 116.3581721369992
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1942974464,
+        "rss_start_bytes": 1908764672,
+        "seconds": 116.35830710698792
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 40278,
+        "mask_sha256": "3e4decfbcad813a24ad48eaeab5722614440fdbb8307fa91a3af3532e65d30d1",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 615
+      },
+      "metrics": {
+        "hits_at_1": 0.67,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.8933333333333334,
+        "mrr_at_100": 0.7436262892300249,
+        "mrr_retention": 0.9045384540244117,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "neural_inference": 114.46721834699565
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1945464832,
+        "rss_start_bytes": 1914023936,
+        "seconds": 114.46735163599078
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 38378,
+        "mask_sha256": "f71c56fbca4b40fb2b0a8ae84759be111abf787090a70f5f300a5c61a84fac38",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 574
+      },
+      "metrics": {
+        "hits_at_1": 0.642,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.856,
+        "mrr_at_100": 0.7255945234298183,
+        "mrr_retention": 0.8826048217732746,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "neural_inference": 114.73025685000175
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1945690112,
+        "rss_start_bytes": 1916006400,
+        "seconds": 114.73037307499908
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 123576,
+        "mask_sha256": "c533fab7335254c099e0f4639c8a5860850d906a3bb89cbf684ac4e8e3ab24d3",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1821
+      },
+      "metrics": {
+        "hits_at_1": 0.486,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.648,
+        "mrr_at_100": 0.563170593797603,
+        "mrr_retention": 0.6850342243725045,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "neural_inference": 100.93786321498919
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1942872064,
+        "rss_start_bytes": 1919119360,
+        "seconds": 100.93800955399638
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 120493,
+        "mask_sha256": "96d8bedc84e97f96dda29a871f546dfc5cb1ebf4f8b1f92cd28f294b1ed4a02a",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1801
+      },
+      "metrics": {
+        "hits_at_1": 0.494,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.6586666666666666,
+        "mrr_at_100": 0.5722029711554409,
+        "mrr_retention": 0.6960211041664981,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "neural_inference": 101.94361855299212
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1944059904,
+        "rss_start_bytes": 1923264512,
+        "seconds": 101.94383710899274
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 117462,
+        "mask_sha256": "6135f57fbc2b46f36664dd3f5d9ac7b91add945580e10e711819945ad1deb489",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1744
+      },
+      "metrics": {
+        "hits_at_1": 0.474,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.632,
+        "mrr_at_100": 0.562598698824244,
+        "mrr_retention": 0.6843385779133103,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "neural_inference": 104.15892196400091
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1943212032,
+        "rss_start_bytes": 1925345280,
+        "seconds": 104.15904491400579
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 198659,
+        "mask_sha256": "45d381440aaf8229914984cd7688eed9c39416e32ff6213542200798f94b9503",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 2958
+      },
+      "metrics": {
+        "hits_at_1": 0.314,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.4186666666666667,
+        "mrr_at_100": 0.38228996154702705,
+        "mrr_retention": 0.46501310646890676,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "neural_inference": 88.7347353810037
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1940307968,
+        "rss_start_bytes": 1926561792,
+        "seconds": 88.73485712800175
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 199843,
+        "mask_sha256": "28c5cc852a98d7c2f0628732b038dd56524e357a18fcff2bba64364b1b75bb3d",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 2986
+      },
+      "metrics": {
+        "hits_at_1": 0.326,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.4346666666666667,
+        "mrr_at_100": 0.39033948150488584,
+        "mrr_retention": 0.47480444984093756,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "neural_inference": 87.8794777639996
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1940316160,
+        "rss_start_bytes": 1929875456,
+        "seconds": 87.87966305599548
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 197703,
+        "mask_sha256": "506d49bd253fe189e68eb07c92bad8d5e68c095ec0333d30ec57f8fe26f15e99",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 2925
+      },
+      "metrics": {
+        "hits_at_1": 0.292,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.3893333333333333,
+        "mrr_at_100": 0.3710758081284569,
+        "mrr_retention": 0.4513723394017163,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "neural_inference": 91.18800589500461
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1940131840,
+        "rss_start_bytes": 1930940416,
+        "seconds": 91.18813954800135
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277916,
+        "mask_sha256": "1e9d6eedd2cd48e8a2ad2e77d396f291a8c892422c9ba6246ad6c2dae9341369",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 4149
+      },
+      "metrics": {
+        "hits_at_1": 0.176,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.23466666666666666,
+        "mrr_at_100": 0.25414855181896395,
+        "mrr_retention": 0.30914337145463405,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "neural_inference": 75.80841429300199
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1936982016,
+        "rss_start_bytes": 1932836864,
+        "seconds": 75.80856629299524
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277139,
+        "mask_sha256": "e48464dc63b4387fa7e45744fbd4998f1e486dc1a9533cea65e13d874be60f77",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 4150
+      },
+      "metrics": {
+        "hits_at_1": 0.172,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.2293333333333333,
+        "mrr_at_100": 0.25749637413192206,
+        "mrr_retention": 0.3132156239599174,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "neural_inference": 75.8730901700037
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1936228352,
+        "rss_start_bytes": 1933889536,
+        "seconds": 75.87323851999827
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277607,
+        "mask_sha256": "1b8c203ecbc2f31bc584e5d53911f138889d5750dca50eebf96855605d1f36d6",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 4138
+      },
+      "metrics": {
+        "hits_at_1": 0.144,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.19199999999999998,
+        "mrr_at_100": 0.23610960886536794,
+        "mrr_retention": 0.28720100899677187,
+        "queries": 500
+      },
+      "model": "official_ditto_plain",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "neural_inference": 76.9637121350097
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1935958016,
+        "rss_start_bytes": 1934159872,
+        "seconds": 76.96385201399971
+      }
+    }
+  ],
+  "serialized_model_bytes": 1495922733,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

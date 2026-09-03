@@ -1,0 +1,159 @@
+{
+  "condition": "drop_numerical",
+  "dataset": "walmart_amazon",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction",
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.9694656488549618,
+        "hits_at_10": 0.9847328244274809,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9748757647546803,
+        "ndcg": 0.9763241395330993,
+        "queries": 131
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9694656488549618,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 1.0,
+        "mrr": 0.978880407124682,
+        "ndcg": 0.9813123387638286,
+        "queries": 131
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.9694656488549618,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9769296013570823,
+        "ndcg": 0.9790509266192862,
+        "queries": 131
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.8991596638655462,
+        "hits_at_10": 0.9747899159663865,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9747899159663865,
+        "mrr": 0.9349110273480021,
+        "ndcg": 0.9488204404114076,
+        "queries": 119
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9159663865546218,
+        "hits_at_10": 0.9915966386554622,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9915966386554622,
+        "mrr": 0.9516806722689075,
+        "ndcg": 0.9613797488077372,
+        "queries": 119
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.907563025210084,
+        "hits_at_10": 0.9915966386554622,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9831932773109243,
+        "mrr": 0.9455434347652104,
+        "ndcg": 0.9559722232903278,
+        "queries": 119
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    }
+  },
+  "runtime_seconds": 540.8792407512665,
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": true,
+  "split_validation": {
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09375,
+        "positives": 576,
+        "rows": 6144
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.09419228892142509,
+        "positives": 193,
+        "rows": 2049
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 9,
+      "learning_rate": 1e-05,
+      "validation_f1": 0.8785529715762274
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 2e-05,
+      "validation_f1": 0.8739946380697051
+    }
+  ]
+}

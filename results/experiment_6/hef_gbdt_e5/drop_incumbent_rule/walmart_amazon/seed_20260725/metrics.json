@@ -1,0 +1,122 @@
+{
+  "condition": "drop_incumbent_rule",
+  "dataset": "walmart_amazon",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction",
+    "embedding_score"
+  ],
+  "model": "hef_gbdt_e5",
+  "runtime_seconds": 2.205334424972534,
+  "seed": 20260725,
+  "selected_max_leaf_nodes": 7,
+  "selection_metric": "validation_conditional_mrr_at_100",
+  "status": "complete",
+  "test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.9236641221374046,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9521628498727736,
+        "ndcg": 0.9617888490801619,
+        "queries": 131
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9236641221374046,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9521628498727736,
+        "ndcg": 0.9617888490801619,
+        "queries": 131
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.9236641221374046,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9521628498727736,
+        "ndcg": 0.9617888490801619,
+        "queries": 131
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    }
+  },
+  "test_policy": "untouched until validation capacity selection was locked",
+  "validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.907563025210084,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9747899159663865,
+        "mrr": 0.9418767507002801,
+        "ndcg": 0.9530985767797253,
+        "queries": 119
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.8991596638655462,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9747899159663865,
+        "mrr": 0.9376750700280112,
+        "ndcg": 0.9500892133136976,
+        "queries": 119
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8991596638655462,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9747899159663865,
+        "mrr": 0.9376750700280112,
+        "ndcg": 0.9499971461374688,
+        "queries": 119
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    }
+  }
+}

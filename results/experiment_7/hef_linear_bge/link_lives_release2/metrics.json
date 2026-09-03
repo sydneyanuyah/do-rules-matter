@@ -1,0 +1,428 @@
+{
+  "cold_end_to_end_seconds": 1134.8666092269996,
+  "dataset": "link_lives_release2",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "hef_linear_bge",
+  "model_load_seconds": 3.465666254996904,
+  "scenarios": [
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.6756923076923077,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.786030555194933,
+        "mrr_retention": 1.0,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "cached_fusion": 0.12159617300494574,
+        "semantic_encoding": 1083.9806690959958,
+        "structured_features": 47.2317438290047
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 2120574976,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5114871808,
+        "rss_start_bytes": 1408258048,
+        "seconds": 1131.4009429720027
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 647574,
+        "mask_sha256": "3e904ceb1dd6a11f200fe5dcaceb547f429a062d302ebfb6370428e1163c72d0",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 9171
+      },
+      "metrics": {
+        "hits_at_1": 0.47415384615384615,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.7017304189435337,
+        "mrr_at_100": 0.5938062661292707,
+        "mrr_retention": 0.7554493425284322,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "cached_fusion": 0.12098481001157779,
+        "semantic_encoding": 994.0212505170057,
+        "structured_features": 44.1624959519977
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 2064961536,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5162958848,
+        "rss_start_bytes": 2873602048,
+        "seconds": 1038.3667915199912
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 641237,
+        "mask_sha256": "e6195f133158fdc6fc9f13f3d2b2db52cd2314082a18cfcdcad0c223c75d226f",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 9062
+      },
+      "metrics": {
+        "hits_at_1": 0.4716923076923077,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.698087431693989,
+        "mrr_at_100": 0.5891299875099538,
+        "mrr_retention": 0.7495001099083883,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "cached_fusion": 0.12116016499930993,
+        "semantic_encoding": 985.5805650629918,
+        "structured_features": 44.3297437739966
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 2064961536,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5182287872,
+        "rss_start_bytes": 2971803648,
+        "seconds": 1030.094954058004
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 645679,
+        "mask_sha256": "9878f63a062041ca6dbfa50a26c22ec2df9324078fa02ce0ed0b9fc6c269686b",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 9148
+      },
+      "metrics": {
+        "hits_at_1": 0.4596923076923077,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.680327868852459,
+        "mrr_at_100": 0.5862432322050574,
+        "mrr_retention": 0.745827536004209,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "cached_fusion": 0.12198258799617179,
+        "semantic_encoding": 989.1019691920083,
+        "structured_features": 44.261865943000885
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1985373184,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5202243584,
+        "rss_start_bytes": 3016802304,
+        "seconds": 1033.5529569049977
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 1950833,
+        "mask_sha256": "3e46c30d91674ea110bc792b5e839b93c21d2d31184d5b8a7b538138d592a9a1",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 27509
+      },
+      "metrics": {
+        "hits_at_1": 0.244,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.3611111111111111,
+        "mrr_at_100": 0.3467198196343762,
+        "mrr_retention": 0.44110221586537535,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "cached_fusion": 0.12004783299926203,
+        "semantic_encoding": 786.9223929080035,
+        "structured_features": 38.27682328499213
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1902723072,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5165080576,
+        "rss_start_bytes": 3010461696,
+        "seconds": 825.376640352988
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 1954257,
+        "mask_sha256": "04218fa6404a73e5a2d9d5b126228825229e37c1f7260b8966e7040ebb1c44e0",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 27565
+      },
+      "metrics": {
+        "hits_at_1": 0.23661538461538462,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.3501821493624772,
+        "mrr_at_100": 0.3427660472356091,
+        "mrr_retention": 0.43607216662284104,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "cached_fusion": 0.11995967400434893,
+        "semantic_encoding": 784.4125535119965,
+        "structured_features": 38.2300178079895
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1845286912,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5165056000,
+        "rss_start_bytes": 3023417344,
+        "seconds": 822.8205144169915
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 1945282,
+        "mask_sha256": "f03fa52b6bec4af4344f9e8efaabc4ea326696b3a8545861a7b1281cf3863606",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 27434
+      },
+      "metrics": {
+        "hits_at_1": 0.22215384615384615,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.32877959927140255,
+        "mrr_at_100": 0.3313446059984703,
+        "mrr_retention": 0.4215416357654162,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "cached_fusion": 0.11783778999233618,
+        "semantic_encoding": 785.7807475480076,
+        "structured_features": 38.06792039699212
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1901424640,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5176573952,
+        "rss_start_bytes": 3023253504,
+        "seconds": 824.0237168349995
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 3260917,
+        "mask_sha256": "ff739385c7b40e98ea420bc6ebf5a58424ef4a3813bb5fb8532b88049bf621a3",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 45903
+      },
+      "metrics": {
+        "hits_at_1": 0.12892307692307692,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.1908014571948998,
+        "mrr_at_100": 0.20832805641911728,
+        "mrr_retention": 0.26503811466648725,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "cached_fusion": 0.11755114799598232,
+        "semantic_encoding": 584.0088074469968,
+        "structured_features": 32.45046275299683
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1699320832,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5125099520,
+        "rss_start_bytes": 3024347136,
+        "seconds": 616.6238429689984
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 3263520,
+        "mask_sha256": "1c554a779be1db2f38b7c50fb5c99d2a5e4b9ae6b7eaef83697e4dabe4d65983",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 45989
+      },
+      "metrics": {
+        "hits_at_1": 0.12184615384615384,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.180327868852459,
+        "mrr_at_100": 0.20333484665321094,
+        "mrr_retention": 0.25868567743245624,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "cached_fusion": 0.11761405901052058,
+        "semantic_encoding": 583.7664647490019,
+        "structured_features": 32.37678931800474
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1778919424,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5121470464,
+        "rss_start_bytes": 3011817472,
+        "seconds": 616.3084904230054
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 3240762,
+        "mask_sha256": "807ac63a5b19c289e5273a64e2f64dce40796546957a423c56d04fb2083f2147",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 45654
+      },
+      "metrics": {
+        "hits_at_1": 0.11938461538461538,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.17668488160291437,
+        "mrr_at_100": 0.19951675983339653,
+        "mrr_retention": 0.25382824944243676,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "cached_fusion": 0.11599982400366571,
+        "semantic_encoding": 585.8091946109926,
+        "structured_features": 32.45131164199847
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1776996352,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5144031232,
+        "rss_start_bytes": 3018375168,
+        "seconds": 618.4251407819975
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 4546876,
+        "mask_sha256": "870ba0cfbc3a5e2590860d046d516d738051170ae7a4c470cbb1121237190394",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 64053
+      },
+      "metrics": {
+        "hits_at_1": 0.068,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.10063752276867031,
+        "mrr_at_100": 0.1257708928732661,
+        "mrr_retention": 0.1600076384334389,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "cached_fusion": 0.13174517099105287,
+        "semantic_encoding": 377.1557398420118,
+        "structured_features": 26.79504552599974
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1500029952,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5171339264,
+        "rss_start_bytes": 3020165120,
+        "seconds": 404.12800162100757
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 4563118,
+        "mask_sha256": "c1aebdb795fe4b7a95a8c2a20659a7aeb58a865081ec3015a7c7df2df277ff9a",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 64309
+      },
+      "metrics": {
+        "hits_at_1": 0.05815384615384615,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.0860655737704918,
+        "mrr_at_100": 0.11650359802328701,
+        "mrr_retention": 0.14821764529801834,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "cached_fusion": 0.11829381898860447,
+        "semantic_encoding": 374.9066328850022,
+        "structured_features": 26.824485696008196
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1451520000,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5132120064,
+        "rss_start_bytes": 3019026432,
+        "seconds": 401.89495294200606
+      }
+    },
+    {
+      "dataset": "link_lives_release2",
+      "mask": {
+        "affected_pair_cells": 4544187,
+        "mask_sha256": "673ef97ff4d206400cf102e125abd17d3ea9baf50e1780f0b1b1e7eaf9bfb83d",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 64024
+      },
+      "metrics": {
+        "hits_at_1": 0.0643076923076923,
+        "hits_at_100": 0.9852307692307692,
+        "hits_at_1_retention": 0.09517304189435336,
+        "mrr_at_100": 0.1231747455110709,
+        "mrr_retention": 0.15670478036381671,
+        "queries": 3250
+      },
+      "model": "hef_linear_bge",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "cached_fusion": 0.11780753399943933,
+        "semantic_encoding": 378.45468651100236,
+        "structured_features": 26.893722709006397
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 1502245888,
+        "gpu_peak_reserved_bytes": 2692743168,
+        "rss_peak_bytes": 5138571264,
+        "rss_start_bytes": 3023020032,
+        "seconds": 405.5092857689888
+      }
+    }
+  ],
+  "serialized_model_bytes": 4941,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

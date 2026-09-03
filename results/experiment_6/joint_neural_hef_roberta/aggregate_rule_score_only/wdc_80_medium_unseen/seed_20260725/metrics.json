@@ -1,0 +1,153 @@
+{
+  "condition": "aggregate_rule_score_only",
+  "dataset": "wdc_80_medium_unseen",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.43172690763052207,
+        "hits_at_10": 0.9558232931726908,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.8313253012048193,
+        "mrr": 0.5962304529889048,
+        "ndcg": 0.6912090666315005,
+        "queries": 498
+      },
+      "hits_at_100_end_to_end": 0.996,
+      "pool_hit": 0.996,
+      "pool_hit_queries": 498,
+      "total_queries": 500
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.4352226720647773,
+        "hits_at_10": 0.9635627530364372,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.8380566801619433,
+        "mrr": 0.600907844404808,
+        "ndcg": 0.695409835282068,
+        "queries": 494
+      },
+      "hits_at_20_end_to_end": 0.988,
+      "pool_hit": 0.988,
+      "pool_hit_queries": 494,
+      "total_queries": 500
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.4334677419354839,
+        "hits_at_10": 0.9596774193548387,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.8346774193548387,
+        "mrr": 0.5985776348427558,
+        "ndcg": 0.6933423186678839,
+        "queries": 496
+      },
+      "hits_at_50_end_to_end": 0.992,
+      "pool_hit": 0.992,
+      "pool_hit_queries": 496,
+      "total_queries": 500
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.3795180722891566,
+        "hits_at_10": 0.9357429718875502,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.7630522088353414,
+        "mrr": 0.539293664627915,
+        "ndcg": 0.6454687698793043,
+        "queries": 498
+      },
+      "hits_at_100_end_to_end": 0.996,
+      "pool_hit": 0.996,
+      "pool_hit_queries": 498,
+      "total_queries": 500
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.390495867768595,
+        "hits_at_10": 0.9628099173553719,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.7851239669421488,
+        "mrr": 0.5539517124616464,
+        "ndcg": 0.6583653955173673,
+        "queries": 484
+      },
+      "hits_at_20_end_to_end": 0.968,
+      "pool_hit": 0.968,
+      "pool_hit_queries": 484,
+      "total_queries": 500
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.3795180722891566,
+        "hits_at_10": 0.9357429718875502,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.7630522088353414,
+        "mrr": 0.539293664627915,
+        "ndcg": 0.6454687698793043,
+        "queries": 498
+      },
+      "hits_at_50_end_to_end": 0.996,
+      "pool_hit": 0.996,
+      "pool_hit_queries": 498,
+      "total_queries": 500
+    }
+  },
+  "runtime_seconds": 90.55859398841858,
+  "score_integrity": {
+    "degenerate_test_scores": true,
+    "test_unique_values": 1,
+    "valid_unique_values": 1
+  },
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": false,
+  "split_validation": {
+    "offer_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1111111111111111,
+        "positives": 500,
+        "rows": 4500
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.25,
+        "positives": 1500,
+        "rows": 6000
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.14285714285714285,
+        "positives": 500,
+        "rows": 3500
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "validation_f1": 0.25
+    }
+  ]
+}

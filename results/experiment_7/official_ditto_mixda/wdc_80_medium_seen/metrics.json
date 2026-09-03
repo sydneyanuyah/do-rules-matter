@@ -1,0 +1,402 @@
+{
+  "cold_end_to_end_seconds": 120.63325639300456,
+  "dataset": "wdc_80_medium_seen",
+  "mask_seed_policy": "one clean baseline and three matched record-level masks per nonzero level",
+  "model": "official_ditto_mixda",
+  "model_load_seconds": 5.088760871003615,
+  "scenarios": [
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 0,
+        "mask_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "probability": 0.0,
+        "seed": 20260725,
+        "unique_record_fields_masked": 0
+      },
+      "metrics": {
+        "hits_at_1": 0.76,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 1.0,
+        "mrr_at_100": 0.8287919330799464,
+        "mrr_retention": 1.0,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p00_seed20260725",
+      "stages": {
+        "neural_inference": 115.54434916000173
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1924870144,
+        "rss_start_bytes": 1838780416,
+        "seconds": 115.54449552200094
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 40733,
+        "mask_sha256": "474b477c079e9f27fa2dac9cd394dec12eda6b154c7244961d19cebfe172f1ec",
+        "probability": 0.1,
+        "seed": 20260725,
+        "unique_record_fields_masked": 612
+      },
+      "metrics": {
+        "hits_at_1": 0.662,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.8710526315789474,
+        "mrr_at_100": 0.7389220022404492,
+        "mrr_retention": 0.8915651477138253,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p10_seed20260725",
+      "stages": {
+        "neural_inference": 115.57487792198663
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1943621632,
+        "rss_start_bytes": 1907937280,
+        "seconds": 115.57505249899987
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 40278,
+        "mask_sha256": "3e4decfbcad813a24ad48eaeab5722614440fdbb8307fa91a3af3532e65d30d1",
+        "probability": 0.1,
+        "seed": 20260726,
+        "unique_record_fields_masked": 615
+      },
+      "metrics": {
+        "hits_at_1": 0.636,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.8368421052631579,
+        "mrr_at_100": 0.7233200528113155,
+        "mrr_retention": 0.8727402185531927,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p10_seed20260726",
+      "stages": {
+        "neural_inference": 115.31542919999629
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1946173440,
+        "rss_start_bytes": 1913098240,
+        "seconds": 115.31557136500487
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 38378,
+        "mask_sha256": "f71c56fbca4b40fb2b0a8ae84759be111abf787090a70f5f300a5c61a84fac38",
+        "probability": 0.1,
+        "seed": 20260727,
+        "unique_record_fields_masked": 574
+      },
+      "metrics": {
+        "hits_at_1": 0.654,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.8605263157894737,
+        "mrr_at_100": 0.7329998467715368,
+        "mrr_retention": 0.8844196203111822,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p10_seed20260727",
+      "stages": {
+        "neural_inference": 114.09840692899888
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1946288128,
+        "rss_start_bytes": 1916194816,
+        "seconds": 114.09854402199562
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 123576,
+        "mask_sha256": "c533fab7335254c099e0f4639c8a5860850d906a3bb89cbf684ac4e8e3ab24d3",
+        "probability": 0.3,
+        "seed": 20260725,
+        "unique_record_fields_masked": 1821
+      },
+      "metrics": {
+        "hits_at_1": 0.492,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.6473684210526316,
+        "mrr_at_100": 0.5667607392413254,
+        "mrr_retention": 0.6838395942575552,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p30_seed20260725",
+      "stages": {
+        "neural_inference": 100.60378262599988
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1943601152,
+        "rss_start_bytes": 1918259200,
+        "seconds": 100.60390423500212
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 120493,
+        "mask_sha256": "96d8bedc84e97f96dda29a871f546dfc5cb1ebf4f8b1f92cd28f294b1ed4a02a",
+        "probability": 0.3,
+        "seed": 20260726,
+        "unique_record_fields_masked": 1801
+      },
+      "metrics": {
+        "hits_at_1": 0.498,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.6552631578947369,
+        "mrr_at_100": 0.5715995338584117,
+        "mrr_retention": 0.6896779650523872,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p30_seed20260726",
+      "stages": {
+        "neural_inference": 101.4585944480059
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1943924736,
+        "rss_start_bytes": 1922387968,
+        "seconds": 101.4588017900096
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 117462,
+        "mask_sha256": "6135f57fbc2b46f36664dd3f5d9ac7b91add945580e10e711819945ad1deb489",
+        "probability": 0.3,
+        "seed": 20260727,
+        "unique_record_fields_masked": 1744
+      },
+      "metrics": {
+        "hits_at_1": 0.504,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.6631578947368421,
+        "mrr_at_100": 0.5752013722085554,
+        "mrr_retention": 0.694023854782224,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p30_seed20260727",
+      "stages": {
+        "neural_inference": 103.83630759800144
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1944068096,
+        "rss_start_bytes": 1924456448,
+        "seconds": 103.836462139996
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 198659,
+        "mask_sha256": "45d381440aaf8229914984cd7688eed9c39416e32ff6213542200798f94b9503",
+        "probability": 0.5,
+        "seed": 20260725,
+        "unique_record_fields_masked": 2958
+      },
+      "metrics": {
+        "hits_at_1": 0.314,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.4131578947368421,
+        "mrr_at_100": 0.38053145214518463,
+        "mrr_retention": 0.45913990828923534,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p50_seed20260725",
+      "stages": {
+        "neural_inference": 88.01716122499784
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1941164032,
+        "rss_start_bytes": 1926516736,
+        "seconds": 88.01729519799119
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 199843,
+        "mask_sha256": "28c5cc852a98d7c2f0628732b038dd56524e357a18fcff2bba64364b1b75bb3d",
+        "probability": 0.5,
+        "seed": 20260726,
+        "unique_record_fields_masked": 2986
+      },
+      "metrics": {
+        "hits_at_1": 0.312,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.4105263157894737,
+        "mrr_at_100": 0.3791377572690175,
+        "mrr_retention": 0.4574583102662093,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p50_seed20260726",
+      "stages": {
+        "neural_inference": 87.3833033139963
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1941172224,
+        "rss_start_bytes": 1928781824,
+        "seconds": 87.38345934600511
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 197703,
+        "mask_sha256": "506d49bd253fe189e68eb07c92bad8d5e68c095ec0333d30ec57f8fe26f15e99",
+        "probability": 0.5,
+        "seed": 20260727,
+        "unique_record_fields_masked": 2925
+      },
+      "metrics": {
+        "hits_at_1": 0.318,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.41842105263157897,
+        "mrr_at_100": 0.3840144889771431,
+        "mrr_retention": 0.46334245502375143,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p50_seed20260727",
+      "stages": {
+        "neural_inference": 90.85534304199973
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1941172224,
+        "rss_start_bytes": 1930846208,
+        "seconds": 90.85547487299482
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277916,
+        "mask_sha256": "1e9d6eedd2cd48e8a2ad2e77d396f291a8c892422c9ba6246ad6c2dae9341369",
+        "probability": 0.7,
+        "seed": 20260725,
+        "unique_record_fields_masked": 4149
+      },
+      "metrics": {
+        "hits_at_1": 0.178,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.23421052631578945,
+        "mrr_at_100": 0.2575130211879263,
+        "mrr_retention": 0.3107088895411416,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p70_seed20260725",
+      "stages": {
+        "neural_inference": 75.38166627199098
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1937182720,
+        "rss_start_bytes": 1931878400,
+        "seconds": 75.38182782199874
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277139,
+        "mask_sha256": "e48464dc63b4387fa7e45744fbd4998f1e486dc1a9533cea65e13d874be60f77",
+        "probability": 0.7,
+        "seed": 20260726,
+        "unique_record_fields_masked": 4150
+      },
+      "metrics": {
+        "hits_at_1": 0.16,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.21052631578947367,
+        "mrr_at_100": 0.24376502001966935,
+        "mrr_retention": 0.2941208888385204,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p70_seed20260726",
+      "stages": {
+        "neural_inference": 74.55531834199792
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1937047552,
+        "rss_start_bytes": 1934086144,
+        "seconds": 74.55547596899851
+      }
+    },
+    {
+      "dataset": "wdc_80_medium_seen",
+      "mask": {
+        "affected_pair_cells": 277607,
+        "mask_sha256": "1b8c203ecbc2f31bc584e5d53911f138889d5750dca50eebf96855605d1f36d6",
+        "probability": 0.7,
+        "seed": 20260727,
+        "unique_record_fields_masked": 4138
+      },
+      "metrics": {
+        "hits_at_1": 0.15,
+        "hits_at_100": 0.998,
+        "hits_at_1_retention": 0.19736842105263158,
+        "mrr_at_100": 0.22604421439527475,
+        "mrr_retention": 0.2727393998096145,
+        "queries": 500
+      },
+      "model": "official_ditto_mixda",
+      "scenario": "p70_seed20260727",
+      "stages": {
+        "neural_inference": 76.11386969200976
+      },
+      "timing": {
+        "gpu_peak_allocated_bytes": 3185610240,
+        "gpu_peak_reserved_bytes": 3927965696,
+        "rss_peak_bytes": 1937047552,
+        "rss_start_bytes": 1934979072,
+        "seconds": 76.11401656499947
+      }
+    }
+  ],
+  "serialized_model_bytes": 1495922733,
+  "status": "complete",
+  "training_seed_policy": "three-checkpoint score ensemble"
+}

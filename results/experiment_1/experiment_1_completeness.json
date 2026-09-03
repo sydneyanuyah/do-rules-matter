@@ -1,0 +1,44 @@
+{
+  "experiment": "Experiment 1 — Classification",
+  "status": "complete",
+  "private_data_excluded": true,
+  "public_genealogy_dataset": "link_lives_release2",
+  "configuration_count": 47,
+  "dataset_count": 6,
+  "expected_model_dataset_cells": 282,
+  "completed_model_dataset_cells": 282,
+  "completion_percent": 100,
+  "repeated_run_sd_cells_expected": 216,
+  "repeated_run_sd_cells_completed": 216,
+  "deterministic_cells_without_sd": 66,
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen",
+    "link_lives_release2"
+  ],
+  "seeds": [
+    20260725,
+    20260726,
+    20260727
+  ],
+  "family_counts": {
+    "deterministic": 1,
+    "frozen_embedding": 7,
+    "scalar_fusion": 2,
+    "hef_linear": 7,
+    "hef_gbdt": 7,
+    "neural_em": 7,
+    "mixda_hef": 4,
+    "cross_evidence": 3,
+    "joint_neural_hef": 7,
+    "neural_hef_oof": 2
+  },
+  "artifact_root": ".",
+  "exclusions": [
+    "Experiment 2 ranking outputs",
+    "private genealogy data"
+  ]
+}

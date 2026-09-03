@@ -1,0 +1,121 @@
+{
+  "condition": "raw_field_features_only",
+  "dataset": "walmart_amazon",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "title_jaccard",
+    "title_char_ratio",
+    "description_jaccard",
+    "all_token_jaccard",
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction"
+  ],
+  "model": "hef_gbdt_e5",
+  "runtime_seconds": 2.252908229827881,
+  "seed": 20260725,
+  "selected_max_leaf_nodes": 7,
+  "selection_metric": "validation_conditional_mrr_at_100",
+  "status": "complete",
+  "test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.9007633587786259,
+        "hits_at_10": 0.9923664122137404,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9360179186178287,
+        "ndcg": 0.9493759449305262,
+        "queries": 131
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9083969465648855,
+        "hits_at_10": 1.0,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9923664122137404,
+        "mrr": 0.9425784563189143,
+        "ndcg": 0.954597780387959,
+        "queries": 131
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.9083969465648855,
+        "hits_at_10": 0.9923664122137404,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9847328244274809,
+        "mrr": 0.9419847328244274,
+        "ndcg": 0.9539743024048253,
+        "queries": 131
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 131,
+      "total_queries": 131
+    }
+  },
+  "test_policy": "untouched until validation capacity selection was locked",
+  "validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.8907563025210085,
+        "hits_at_10": 0.9915966386554622,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9831932773109243,
+        "mrr": 0.9265639589169,
+        "ndcg": 0.9402635555759061,
+        "queries": 119
+      },
+      "hits_at_100_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.9159663865546218,
+        "hits_at_10": 0.9915966386554622,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9831932773109243,
+        "mrr": 0.9434873949579833,
+        "ndcg": 0.9534651652494536,
+        "queries": 119
+      },
+      "hits_at_20_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.8991596638655462,
+        "hits_at_10": 0.9915966386554622,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9831932773109243,
+        "mrr": 0.9336134453781514,
+        "ndcg": 0.9457347941121667,
+        "queries": 119
+      },
+      "hits_at_50_end_to_end": 1.0,
+      "pool_hit": 1.0,
+      "pool_hit_queries": 119,
+      "total_queries": 119
+    }
+  }
+}

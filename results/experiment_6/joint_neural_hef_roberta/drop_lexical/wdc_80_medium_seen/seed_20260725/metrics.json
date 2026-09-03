@@ -1,0 +1,167 @@
+{
+  "condition": "drop_lexical",
+  "dataset": "wdc_80_medium_seen",
+  "experiment": "exp06_public_evidence_ablation_rerun_v2",
+  "features": [
+    "price_similarity",
+    "numeric_token_jaccard",
+    "brand_exact",
+    "manufacturer_exact",
+    "currency_exact",
+    "model_exact",
+    "left_field_fraction",
+    "right_field_fraction",
+    "shared_field_fraction",
+    "rule_score"
+  ],
+  "model": "joint_neural_hef_roberta",
+  "ranking_test": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.7334669338677354,
+        "hits_at_10": 0.9539078156312625,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9158316633266533,
+        "mrr": 0.8140776726803068,
+        "ndcg": 0.856937672804001,
+        "queries": 499
+      },
+      "hits_at_100_end_to_end": 0.998,
+      "pool_hit": 0.998,
+      "pool_hit_queries": 499,
+      "total_queries": 500
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7601626016260162,
+        "hits_at_10": 0.9878048780487805,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9532520325203252,
+        "mrr": 0.8424123273970836,
+        "ndcg": 0.8805256017915156,
+        "queries": 492
+      },
+      "hits_at_20_end_to_end": 0.984,
+      "pool_hit": 0.984,
+      "pool_hit_queries": 492,
+      "total_queries": 500
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7424547283702213,
+        "hits_at_10": 0.9798792756539235,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.93158953722334,
+        "mrr": 0.8252941037805347,
+        "ndcg": 0.8664938135581147,
+        "queries": 497
+      },
+      "hits_at_50_end_to_end": 0.994,
+      "pool_hit": 0.994,
+      "pool_hit_queries": 497,
+      "total_queries": 500
+    }
+  },
+  "ranking_validation": {
+    "100": {
+      "conditional": {
+        "hits_at_1": 0.751004016064257,
+        "hits_at_10": 0.9497991967871486,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9236947791164659,
+        "mrr": 0.8279369127357957,
+        "ndcg": 0.8668211456750248,
+        "queries": 498
+      },
+      "hits_at_100_end_to_end": 0.996,
+      "pool_hit": 0.996,
+      "pool_hit_queries": 498,
+      "total_queries": 500
+    },
+    "20": {
+      "conditional": {
+        "hits_at_1": 0.7830578512396694,
+        "hits_at_10": 0.981404958677686,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9566115702479339,
+        "mrr": 0.8566560083143381,
+        "ndcg": 0.8910069385934135,
+        "queries": 484
+      },
+      "hits_at_20_end_to_end": 0.968,
+      "pool_hit": 0.968,
+      "pool_hit_queries": 484,
+      "total_queries": 500
+    },
+    "50": {
+      "conditional": {
+        "hits_at_1": 0.7630522088353414,
+        "hits_at_10": 0.9558232931726908,
+        "hits_at_100": 1.0,
+        "hits_at_5": 0.9337349397590361,
+        "mrr": 0.838018172489166,
+        "ndcg": 0.8753681746024065,
+        "queries": 498
+      },
+      "hits_at_50_end_to_end": 0.996,
+      "pool_hit": 0.996,
+      "pool_hit_queries": 498,
+      "total_queries": 500
+    }
+  },
+  "runtime_seconds": 1621.3036713600159,
+  "score_integrity": {
+    "degenerate_test_scores": false,
+    "test_unique_values": 2013,
+    "valid_unique_values": 1965
+  },
+  "seed": 20260725,
+  "selection": "learning rate and epoch selected on classification validation only, matching the locked joint-HEF protocol",
+  "semantic_enabled": true,
+  "split_validation": {
+    "offer_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 4
+    },
+    "pair_overlap": {
+      "train_test": 0,
+      "train_valid": 0,
+      "valid_test": 0
+    },
+    "splits": {
+      "test": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.1111111111111111,
+        "positives": 500,
+        "rows": 4500
+      },
+      "train": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.25,
+        "positives": 1500,
+        "rows": 6000
+      },
+      "valid": {
+        "duplicate_pair_ids": 0,
+        "positive_rate": 0.14285714285714285,
+        "positives": 500,
+        "rows": 3500
+      }
+    }
+  },
+  "status": "complete",
+  "test_policy": "fixed Experiment 2 top-100 test pool scored once after selection lock",
+  "trials": [
+    {
+      "epoch": 8,
+      "learning_rate": 1e-05,
+      "validation_f1": 0.764367816091954
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 2e-05,
+      "validation_f1": 0.7761767531219981
+    }
+  ]
+}

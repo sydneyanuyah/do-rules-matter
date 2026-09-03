@@ -1,0 +1,30 @@
+{
+  "dataset": "abt_buy",
+  "mask": {
+    "affected_pair_cells": 22939,
+    "mask_sha256": "f41e3fa21359f876172b353105d1783642fbcb0c009c7a7d6db9304978add0d1",
+    "probability": 0.3,
+    "seed": 20260727,
+    "unique_record_fields_masked": 813
+  },
+  "metrics": {
+    "hits_at_1": 0.5,
+    "hits_at_100": 1.0,
+    "hits_at_1_retention": 0.5133333333333333,
+    "mrr_at_100": 0.5701802895274994,
+    "mrr_retention": 0.5789522939817686,
+    "queries": 154
+  },
+  "model": "official_ditto_plain",
+  "scenario": "p30_seed20260727",
+  "stages": {
+    "neural_inference": 20.365162996997242
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 3185610240,
+    "gpu_peak_reserved_bytes": 3844079616,
+    "rss_peak_bytes": 1877442560,
+    "rss_start_bytes": 1877438464,
+    "seconds": 20.36523829199723
+  }
+}

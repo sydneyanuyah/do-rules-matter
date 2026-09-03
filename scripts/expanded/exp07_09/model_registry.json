@@ -1,0 +1,95 @@
+{
+  "protocol_version": "2026-08-21-v1",
+  "selection_rule": "Pre-registered from finalized Experiments 1-3 before inspecting masked Experiment 7 test results.",
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen",
+    "link_lives_release2"
+  ],
+  "mask_probabilities": [0.0, 0.1, 0.3, 0.5, 0.7],
+  "mask_seeds": [20260725, 20260726, 20260727],
+  "models": [
+    {
+      "id": "jina_finetuned",
+      "label": "Jina (fine-tuned)",
+      "family": "standalone",
+      "source_prefix": "artifacts/exp02_jina_finetuned_oof/v1/{dataset}/seed_{seed}",
+      "completion_file": "COMPLETED.json"
+    },
+    {
+      "id": "roberta_finetuned",
+      "label": "RoBERTa (fine-tuned)",
+      "family": "standalone",
+      "source_prefix": "artifacts/exp02_hef_cross_evidence/v1/{dataset}/e5_plus_tuned_roberta/seed_{seed}",
+      "completion_file": "SUCCESS.json"
+    },
+    {
+      "id": "official_ditto_plain",
+      "label": "Official Ditto",
+      "family": "standalone",
+      "source_prefix": "artifacts/exp02_propagated/official_ditto_plain/{dataset}/seed_{seed}",
+      "completion_file": "metrics.json"
+    },
+    {
+      "id": "official_ditto_mixda",
+      "label": "Official Ditto + MixDA",
+      "family": "standalone",
+      "source_prefix": "artifacts/exp02_propagated/official_ditto_mixda_all/{dataset}/seed_{seed}",
+      "completion_file": "metrics.json"
+    },
+    {
+      "id": "hef_linear_bert",
+      "label": "HEF-Linear + BERT",
+      "family": "hef_linear",
+      "model_id": "sentence-transformers/bert-base-nli-mean-tokens",
+      "revision": "160a52b38a51ae87295ec3eabcf11755e5d27a8d",
+      "source_prefix": "artifacts/exp02/ranking_by_backbone/sentence-transformers__bert-base-nli-mean-tokens/{dataset}",
+      "completion_file": "metrics.json"
+    },
+    {
+      "id": "hef_linear_bge",
+      "label": "HEF-Linear + BGE",
+      "family": "hef_linear",
+      "model_id": "BAAI/bge-base-en-v1.5",
+      "revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+      "source_prefix": "artifacts/exp02/ranking_by_backbone/BAAI__bge-base-en-v1.5/{dataset}",
+      "completion_file": "metrics.json"
+    },
+    {
+      "id": "hef_gbdt_e5_roberta_oof",
+      "label": "HEF-GBDT + E5 + fine-tuned RoBERTa (OOF)",
+      "family": "hef_gbdt",
+      "source_prefix": "artifacts/exp02_hef_cross_evidence/v1/{dataset}/e5_plus_tuned_roberta/seed_{seed}",
+      "completion_file": "SUCCESS.json"
+    },
+    {
+      "id": "hef_gbdt_e5_jina_oof",
+      "label": "HEF-GBDT + E5 + fine-tuned Jina (OOF)",
+      "family": "hef_gbdt",
+      "source_prefix": "artifacts/exp02_jina_finetuned_oof/v1/{dataset}/seed_{seed}",
+      "completion_file": "COMPLETED.json"
+    },
+    {
+      "id": "joint_neural_hef_roberta",
+      "label": "Joint neural HEF + RoBERTa",
+      "family": "joint_neural_hef",
+      "backbone": "roberta",
+      "revision": "cf74d8acd4f198de950bf004b262e6accfed5d2c",
+      "source_prefix": "artifacts/exp01_hef_joint_finetuned/v1/{dataset}/roberta/cf74d8acd4f198de950bf004b262e6accfed5d2c/seed_{seed}",
+      "completion_file": "COMPLETED.json"
+    },
+    {
+      "id": "joint_neural_hef_jina",
+      "label": "Joint neural HEF + Jina",
+      "family": "joint_neural_hef",
+      "backbone": "jina",
+      "revision": "9cfeff2",
+      "source_prefix": "artifacts/exp01_hef_joint_finetuned/v1/{dataset}/jina/{revision}/seed_{seed}",
+      "completion_file": "COMPLETED.json",
+      "revision_discovery": true
+    }
+  ]
+}

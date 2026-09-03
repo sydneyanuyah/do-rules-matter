@@ -1,0 +1,30 @@
+{
+  "dataset": "wdc_80_medium_seen",
+  "mask": {
+    "affected_pair_cells": 277139,
+    "mask_sha256": "e48464dc63b4387fa7e45744fbd4998f1e486dc1a9533cea65e13d874be60f77",
+    "probability": 0.7,
+    "seed": 20260726,
+    "unique_record_fields_masked": 4150
+  },
+  "metrics": {
+    "hits_at_1": 0.172,
+    "hits_at_100": 0.998,
+    "hits_at_1_retention": 0.2293333333333333,
+    "mrr_at_100": 0.25749637413192206,
+    "mrr_retention": 0.3132156239599174,
+    "queries": 500
+  },
+  "model": "official_ditto_plain",
+  "scenario": "p70_seed20260726",
+  "stages": {
+    "neural_inference": 75.8730901700037
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 3185610240,
+    "gpu_peak_reserved_bytes": 3927965696,
+    "rss_peak_bytes": 1936228352,
+    "rss_start_bytes": 1933889536,
+    "seconds": 75.87323851999827
+  }
+}

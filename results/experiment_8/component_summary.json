@@ -1,0 +1,109 @@
+{
+  "experiment": "exp08_efficiency_deployment",
+  "status": "component_complete_pending_end_to_end_hef",
+  "datasets": [
+    "abt_buy",
+    "amazon_google",
+    "link_lives_release2",
+    "walmart_amazon",
+    "wdc_80_medium_seen",
+    "wdc_80_medium_unseen"
+  ],
+  "component_metrics_verified": 18,
+  "dataset_method_rows": 30,
+  "methods": [
+    "ditto_mixda",
+    "e5_base_v2",
+    "hef_gbdt",
+    "hef_linear",
+    "jina_cross_encoder"
+  ],
+  "measurements": [
+    "offline structured-feature construction time and throughput",
+    "HEF linear and GBDT training time",
+    "batch pairs scored per second",
+    "online per-pair latency",
+    "peak process/GPU memory",
+    "serialized model size",
+    "GPU dependence",
+    "observed open-LLM test generation compute cost"
+  ],
+  "llm_cost": {
+    "currency": "USD",
+    "pricing_source": "AWS Price List API, AmazonSageMaker, us-east-1, Studio JupyterLab",
+    "pricing_effective_date": "2026-08-01",
+    "estimated_test_compute_usd_total": 72.35970277777777,
+    "runs": [
+      {
+        "model": "ministral3_8b",
+        "instance_type": "ml.g5.2xlarge",
+        "gpus": 1,
+        "usd_per_hour": 1.52,
+        "started_utc": "2026-07-29T15:52:12+00:00",
+        "completed_utc": "2026-07-30T04:51:30+00:00",
+        "generated_rows": 103776,
+        "evaluated_rows": 103776,
+        "evaluated_datasets": 6,
+        "observed_wall_clock_hours": 12.988333333333333,
+        "estimated_test_compute_usd": 19.742266666666666,
+        "estimated_usd_per_1000_generated_rows": 0.1902392332202693
+      },
+      {
+        "model": "phi4mini",
+        "instance_type": "ml.g5.2xlarge",
+        "gpus": 1,
+        "usd_per_hour": 1.52,
+        "started_utc": "2026-07-29T15:52:35+00:00",
+        "completed_utc": "2026-07-29T20:13:33+00:00",
+        "generated_rows": 99678,
+        "evaluated_rows": 99678,
+        "evaluated_datasets": 6,
+        "observed_wall_clock_hours": 4.349444444444444,
+        "estimated_test_compute_usd": 6.611155555555555,
+        "estimated_usd_per_1000_generated_rows": 0.06632512244984405
+      },
+      {
+        "model": "qwen35_9b",
+        "instance_type": "ml.g5.2xlarge",
+        "gpus": 1,
+        "usd_per_hour": 1.52,
+        "started_utc": "2026-07-29T15:51:51+00:00",
+        "completed_utc": "2026-07-30T13:48:24+00:00",
+        "generated_rows": 99678,
+        "evaluated_rows": 99678,
+        "evaluated_datasets": 6,
+        "observed_wall_clock_hours": 21.9425,
+        "estimated_test_compute_usd": 33.352599999999995,
+        "estimated_usd_per_1000_generated_rows": 0.3346034230221312
+      },
+      {
+        "model": "qwen3_1_7b",
+        "instance_type": "ml.g5.12xlarge",
+        "gpus": 4,
+        "usd_per_hour": 7.09,
+        "started_utc": "2026-07-29T15:58:40+00:00",
+        "completed_utc": "2026-07-29T17:45:45+00:00",
+        "generated_rows": 103776,
+        "evaluated_rows": 103776,
+        "evaluated_datasets": 6,
+        "observed_wall_clock_hours": 1.7847222222222223,
+        "estimated_test_compute_usd": 12.653680555555557,
+        "estimated_usd_per_1000_generated_rows": 0.12193262946688595
+      }
+    ],
+    "scope": "Observed selected-prompt test generation only; excludes validation sweeps, storage, transfer, startup, and idle application time."
+  },
+  "llm_coverage": {
+    "generated_rows_total": 406908,
+    "evaluated_rows_total": 406908,
+    "uniform_six_dataset_matrix": true,
+    "models": 4,
+    "datasets_per_model": 6,
+    "source": "/tmp/llm_test_evaluation.json"
+  },
+  "not_measured": [
+    "Hosted commercial LLM API pricing",
+    "Energy consumption",
+    "End-to-end ANN candidate-retrieval latency"
+  ]
+}

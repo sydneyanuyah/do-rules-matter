@@ -1,0 +1,283 @@
+config_id,model,family,dataset,runs,f1_mean,f1_std,status
+1,Rules,deterministic,abt_buy,1,0.4013840830449827,,complete
+1,Rules,deterministic,amazon_google,1,0.5221843003412969,,complete
+1,Rules,deterministic,walmart_amazon,1,0.569060773480663,,complete
+1,Rules,deterministic,wdc_80_medium_seen,1,0.28728179551122196,,complete
+1,Rules,deterministic,wdc_80_medium_unseen,1,0.3424015009380863,,complete
+1,Rules,deterministic,link_lives_release2,1,0.5633139808567393,,complete
+2,E5,frozen_embedding,abt_buy,1,0.5023696682464455,,complete
+2,E5,frozen_embedding,amazon_google,1,0.5214007782101168,,complete
+2,E5,frozen_embedding,walmart_amazon,1,0.490272373540856,,complete
+2,E5,frozen_embedding,wdc_80_medium_seen,1,0.3564453125,,complete
+2,E5,frozen_embedding,wdc_80_medium_unseen,1,0.39572192513368987,,complete
+2,E5,frozen_embedding,link_lives_release2,1,0.7052598817304699,,complete
+3,MiniLM,frozen_embedding,abt_buy,1,0.33482810164424515,,complete
+3,MiniLM,frozen_embedding,amazon_google,1,0.422360248447205,,complete
+3,MiniLM,frozen_embedding,walmart_amazon,1,0.37393767705382436,,complete
+3,MiniLM,frozen_embedding,wdc_80_medium_seen,1,0.3089788732394366,,complete
+3,MiniLM,frozen_embedding,wdc_80_medium_unseen,1,0.34499753573188763,,complete
+3,MiniLM,frozen_embedding,link_lives_release2,1,0.6106623586429726,,complete
+4,BGE,frozen_embedding,abt_buy,1,0.4963855421686747,,complete
+4,BGE,frozen_embedding,amazon_google,1,0.5078740157480315,,complete
+4,BGE,frozen_embedding,walmart_amazon,1,0.4663677130044843,,complete
+4,BGE,frozen_embedding,wdc_80_medium_seen,1,0.35673076923076924,,complete
+4,BGE,frozen_embedding,wdc_80_medium_unseen,1,0.4070138150903294,,complete
+4,BGE,frozen_embedding,link_lives_release2,1,0.6691094471881472,,complete
+5,GTE,frozen_embedding,abt_buy,1,0.5,,complete
+5,GTE,frozen_embedding,amazon_google,1,0.5440900562851783,,complete
+5,GTE,frozen_embedding,walmart_amazon,1,0.4986449864498645,,complete
+5,GTE,frozen_embedding,wdc_80_medium_seen,1,0.35862735621072983,,complete
+5,GTE,frozen_embedding,wdc_80_medium_unseen,1,0.4125514403292181,,complete
+5,GTE,frozen_embedding,link_lives_release2,1,0.7341927562922038,,complete
+6,RoBERTa embedding,frozen_embedding,abt_buy,1,0.41681901279707495,,complete
+6,RoBERTa embedding,frozen_embedding,amazon_google,1,0.44635193133047213,,complete
+6,RoBERTa embedding,frozen_embedding,walmart_amazon,1,0.38588235294117645,,complete
+6,RoBERTa embedding,frozen_embedding,wdc_80_medium_seen,1,0.3433703116745906,,complete
+6,RoBERTa embedding,frozen_embedding,wdc_80_medium_unseen,1,0.39475123018042646,,complete
+6,RoBERTa embedding,frozen_embedding,link_lives_release2,1,0.4324460070316424,,complete
+7,BERT embedding,frozen_embedding,abt_buy,1,0.20602526724975703,,complete
+7,BERT embedding,frozen_embedding,amazon_google,1,0.33967391304347827,,complete
+7,BERT embedding,frozen_embedding,walmart_amazon,1,0.3113456464379947,,complete
+7,BERT embedding,frozen_embedding,wdc_80_medium_seen,1,0.25770308123249297,,complete
+7,BERT embedding,frozen_embedding,wdc_80_medium_unseen,1,0.27388535031847133,,complete
+7,BERT embedding,frozen_embedding,link_lives_release2,1,0.3941677993327567,,complete
+8,Jina embedding,frozen_embedding,abt_buy,1,0.43478260869565216,,complete
+8,Jina embedding,frozen_embedding,amazon_google,1,0.3401360544217687,,complete
+8,Jina embedding,frozen_embedding,walmart_amazon,1,0.3398230088495575,,complete
+8,Jina embedding,frozen_embedding,wdc_80_medium_seen,1,0.2930943595150237,,complete
+8,Jina embedding,frozen_embedding,wdc_80_medium_unseen,1,0.3337222870478413,,complete
+8,Jina embedding,frozen_embedding,link_lives_release2,1,0.5862984599044079,,complete
+9,Equal fusion + E5,scalar_fusion,abt_buy,1,0.4963855421686747,,complete
+9,Equal fusion + E5,scalar_fusion,amazon_google,1,0.5330882352941176,,complete
+9,Equal fusion + E5,scalar_fusion,walmart_amazon,1,0.5474254742547425,,complete
+9,Equal fusion + E5,scalar_fusion,wdc_80_medium_seen,1,0.3276477588258628,,complete
+9,Equal fusion + E5,scalar_fusion,wdc_80_medium_unseen,1,0.3634847853272197,,complete
+9,Equal fusion + E5,scalar_fusion,link_lives_release2,1,0.6706569343065694,,complete
+10,Convex fusion + E5,scalar_fusion,abt_buy,1,0.4896907216494845,,complete
+10,Convex fusion + E5,scalar_fusion,amazon_google,1,0.5296052631578947,,complete
+10,Convex fusion + E5,scalar_fusion,walmart_amazon,1,0.5617977528089888,,complete
+10,Convex fusion + E5,scalar_fusion,wdc_80_medium_seen,1,0.35570469798657717,,complete
+10,Convex fusion + E5,scalar_fusion,wdc_80_medium_unseen,1,0.3962362780972295,,complete
+10,Convex fusion + E5,scalar_fusion,link_lives_release2,1,0.7103089629856225,,complete
+11,HEF-linear + E5,hef_linear,abt_buy,3,0.6740088105726872,0,complete
+11,HEF-linear + E5,hef_linear,amazon_google,3,0.5605095541401274,0,complete
+11,HEF-linear + E5,hef_linear,walmart_amazon,3,0.7231638418079096,0,complete
+11,HEF-linear + E5,hef_linear,wdc_80_medium_seen,3,0.42273819055244194,0,complete
+11,HEF-linear + E5,hef_linear,wdc_80_medium_unseen,3,0.49757673667205166,0,complete
+11,HEF-linear + E5,hef_linear,link_lives_release2,3,0.8197187100440404,0,complete
+12,HEF-linear + MiniLM,hef_linear,abt_buy,3,0.6681318681318681,0,complete
+12,HEF-linear + MiniLM,hef_linear,amazon_google,3,0.5520169851380042,0,complete
+12,HEF-linear + MiniLM,hef_linear,walmart_amazon,3,0.7267605633802817,0,complete
+12,HEF-linear + MiniLM,hef_linear,wdc_80_medium_seen,3,0.42142230026338895,0,complete
+12,HEF-linear + MiniLM,hef_linear,wdc_80_medium_unseen,3,0.46788990825688076,0,complete
+12,HEF-linear + MiniLM,hef_linear,link_lives_release2,3,0.8269120184013801,0,complete
+13,HEF-linear + BGE,hef_linear,abt_buy,3,0.6699507389162561,0,complete
+13,HEF-linear + BGE,hef_linear,amazon_google,3,0.568935427574171,0,complete
+13,HEF-linear + BGE,hef_linear,walmart_amazon,3,0.7252124645892352,0,complete
+13,HEF-linear + BGE,hef_linear,wdc_80_medium_seen,3,0.4480796586059744,0,complete
+13,HEF-linear + BGE,hef_linear,wdc_80_medium_unseen,3,0.5190839694656488,0,complete
+13,HEF-linear + BGE,hef_linear,link_lives_release2,3,0.8266244968372628,0,complete
+14,HEF-linear + GTE,hef_linear,abt_buy,3,0.6770601336302895,0,complete
+14,HEF-linear + GTE,hef_linear,amazon_google,3,0.5764499121265377,0,complete
+14,HEF-linear + GTE,hef_linear,walmart_amazon,3,0.740506329113924,0,complete
+14,HEF-linear + GTE,hef_linear,wdc_80_medium_seen,3,0.4592487597448618,0,complete
+14,HEF-linear + GTE,hef_linear,wdc_80_medium_unseen,3,0.5185185185185185,0,complete
+14,HEF-linear + GTE,hef_linear,link_lives_release2,3,0.8305134189031506,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,abt_buy,3,0.6363636363636364,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,amazon_google,3,0.5740740740740741,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,walmart_amazon,3,0.746177370030581,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,wdc_80_medium_seen,3,0.43783783783783786,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,wdc_80_medium_unseen,3,0.5101744186046512,0,complete
+15,HEF-linear + RoBERTa embedding,hef_linear,link_lives_release2,3,0.8063273727647869,0,complete
+16,HEF-linear + BERT embedding,hef_linear,abt_buy,3,0.6550976138828634,0,complete
+16,HEF-linear + BERT embedding,hef_linear,amazon_google,3,0.5505376344086022,0,complete
+16,HEF-linear + BERT embedding,hef_linear,walmart_amazon,3,0.7130434782608696,0,complete
+16,HEF-linear + BERT embedding,hef_linear,wdc_80_medium_seen,3,0.40452830188679245,0,complete
+16,HEF-linear + BERT embedding,hef_linear,wdc_80_medium_unseen,3,0.4750378214826021,0,complete
+16,HEF-linear + BERT embedding,hef_linear,link_lives_release2,3,0.818805372963704,0,complete
+17,HEF-linear + Jina embedding,hef_linear,abt_buy,3,0.6952595936794582,0,complete
+17,HEF-linear + Jina embedding,hef_linear,amazon_google,3,0.5446623093681917,0,complete
+17,HEF-linear + Jina embedding,hef_linear,walmart_amazon,3,0.7188405797101449,0,complete
+17,HEF-linear + Jina embedding,hef_linear,wdc_80_medium_seen,3,0.4302670623145401,0,complete
+17,HEF-linear + Jina embedding,hef_linear,wdc_80_medium_unseen,3,0.48979591836734687,0,complete
+17,HEF-linear + Jina embedding,hef_linear,link_lives_release2,3,0.820969337289812,0,complete
+18,HEF-GBDT + E5,hef_gbdt,abt_buy,3,0.7140961868136305,0.0046849237626827136,complete
+18,HEF-GBDT + E5,hef_gbdt,amazon_google,3,0.5816675381488888,0.009892790804706869,complete
+18,HEF-GBDT + E5,hef_gbdt,walmart_amazon,3,0.7844407718824101,0.010518392244772752,complete
+18,HEF-GBDT + E5,hef_gbdt,wdc_80_medium_seen,3,0.4790615737322126,0.009970207902665874,complete
+18,HEF-GBDT + E5,hef_gbdt,wdc_80_medium_unseen,3,0.5142137673989499,0.0016046326419122366,complete
+18,HEF-GBDT + E5,hef_gbdt,link_lives_release2,3,0.8602926699689689,0.0012427960490436305,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,abt_buy,3,0.7117043812359395,0.0017753947255006973,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,amazon_google,3,0.5728565874907338,0.003059733736652319,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,walmart_amazon,3,0.7708485905052737,0.013946311208679625,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,wdc_80_medium_seen,3,0.44071615292101357,0.011917839013921443,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,wdc_80_medium_unseen,3,0.47604997402043203,0.00239769623302177,complete
+19,HEF-GBDT + MiniLM,hef_gbdt,link_lives_release2,3,0.8551249553294346,0.0031039409612479666,complete
+20,HEF-GBDT + BGE,hef_gbdt,abt_buy,3,0.7332439513672112,0.0037580050029790714,complete
+20,HEF-GBDT + BGE,hef_gbdt,amazon_google,3,0.5894155369720362,0.00363679526711723,complete
+20,HEF-GBDT + BGE,hef_gbdt,walmart_amazon,3,0.7773078086531271,0.005880878198002086,complete
+20,HEF-GBDT + BGE,hef_gbdt,wdc_80_medium_seen,3,0.467892176873786,0.004790602704359159,complete
+20,HEF-GBDT + BGE,hef_gbdt,wdc_80_medium_unseen,3,0.5269880825696732,0.0012820067273810734,complete
+20,HEF-GBDT + BGE,hef_gbdt,link_lives_release2,3,0.8622960681707093,0.0010658876835525563,complete
+21,HEF-GBDT + GTE,hef_gbdt,abt_buy,3,0.7289785732541363,0.009302865157965131,complete
+21,HEF-GBDT + GTE,hef_gbdt,amazon_google,3,0.5846455031795056,0.00023913334082138833,complete
+21,HEF-GBDT + GTE,hef_gbdt,walmart_amazon,3,0.7880256201487272,0.00489585551159267,complete
+21,HEF-GBDT + GTE,hef_gbdt,wdc_80_medium_seen,3,0.48121112270451566,0.0008399893630356813,complete
+21,HEF-GBDT + GTE,hef_gbdt,wdc_80_medium_unseen,3,0.5249446537626002,0.0020683349823564815,complete
+21,HEF-GBDT + GTE,hef_gbdt,link_lives_release2,3,0.8571857477071391,0.0008761094253022655,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,abt_buy,3,0.7148199404571219,0.011088881303800459,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,amazon_google,3,0.5671425512151983,0.009058345367340973,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,walmart_amazon,3,0.7811759877206746,0.0052333127303075015,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,wdc_80_medium_seen,3,0.4570660848920503,0.006248253081460334,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,wdc_80_medium_unseen,3,0.4980570083365672,0.009257064231053902,complete
+22,HEF-GBDT + RoBERTa embedding,hef_gbdt,link_lives_release2,3,0.8514304720325798,0.002283119101702291,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,abt_buy,3,0.6930542593309205,0.015656137279221365,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,amazon_google,3,0.5687827349573281,0.011637842925491377,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,walmart_amazon,3,0.7626895310969917,0.014083641319941739,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,wdc_80_medium_seen,3,0.44394966902572075,0.003290656859044829,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,wdc_80_medium_unseen,3,0.47608630440631955,0.005368280952261862,complete
+23,HEF-GBDT + BERT embedding,hef_gbdt,link_lives_release2,3,0.8474187577305065,0.005326955886305377,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,abt_buy,3,0.7025944117189243,0.016241342292215626,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,amazon_google,3,0.5635860933223364,0.011209057510766212,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,walmart_amazon,3,0.7664895101708336,0.005643562622425354,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,wdc_80_medium_seen,3,0.44937309181027324,0.007170565679900116,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,wdc_80_medium_unseen,3,0.48927978695408475,0.004603373439011955,complete
+24,HEF-GBDT + Jina embedding,hef_gbdt,link_lives_release2,3,0.8511363254848973,0.002073345227142077,complete
+25,Jina zero-shot,neural_em,abt_buy,1,0.6564885496183206,,complete
+25,Jina zero-shot,neural_em,amazon_google,1,0.5517241379310345,,complete
+25,Jina zero-shot,neural_em,walmart_amazon,1,0.6212534059945504,,complete
+25,Jina zero-shot,neural_em,wdc_80_medium_seen,1,0.46986301369863015,,complete
+25,Jina zero-shot,neural_em,wdc_80_medium_unseen,1,0.5025706940874036,,complete
+25,Jina zero-shot,neural_em,link_lives_release2,1,0.6203385165818082,,complete
+26,Jina fine-tuned,neural_em,abt_buy,3,0.897439358065987,0.01573740260011199,complete
+26,Jina fine-tuned,neural_em,amazon_google,3,0.7587592735968288,0.005232030310106163,complete
+26,Jina fine-tuned,neural_em,walmart_amazon,3,0.8594039314528019,0.0040068559550517765,complete
+26,Jina fine-tuned,neural_em,wdc_80_medium_seen,3,0.7513733462020866,0.0027154907724086888,complete
+26,Jina fine-tuned,neural_em,wdc_80_medium_unseen,3,0.7395250653959681,0.009391525407977337,complete
+26,Jina fine-tuned,neural_em,link_lives_release2,3,0.9320421619843211,0.006754496527938473,complete
+27,Tuned RoBERTa,neural_em,abt_buy,3,0.9081467023346296,0.006447205657516212,complete
+27,Tuned RoBERTa,neural_em,amazon_google,3,0.7622027950443284,0.00739362946388447,complete
+27,Tuned RoBERTa,neural_em,walmart_amazon,3,0.8769318777643912,0.0047578485321587444,complete
+27,Tuned RoBERTa,neural_em,wdc_80_medium_seen,3,0.7262304504271563,0.0025464906731524177,complete
+27,Tuned RoBERTa,neural_em,wdc_80_medium_unseen,3,0.6996747331155094,0.00629329228832807,complete
+27,Tuned RoBERTa,neural_em,link_lives_release2,3,0.9386961887919711,0.003024811624999481,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,abt_buy,3,0.9078406736685065,0.008430171747014884,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,amazon_google,3,0.7498875796299204,0.020974861280419754,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,walmart_amazon,3,0.8808617107778979,0.010344700649587814,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,wdc_80_medium_seen,3,0.7345928267342691,0.00965996137646398,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,wdc_80_medium_unseen,3,0.7194337135882146,0.004406975690798568,complete
+28,Ditto-style RoBERTa + MixDA,neural_em,link_lives_release2,3,0.9446015462195482,0.0018306528392344693,complete
+29,Official Ditto,neural_em,abt_buy,3,0.8999045547308704,0.00821654974880171,complete
+29,Official Ditto,neural_em,amazon_google,3,0.7321151432209296,0.02768804600833604,complete
+29,Official Ditto,neural_em,walmart_amazon,3,0.8551479468599034,0.01268183335855834,complete
+29,Official Ditto,neural_em,wdc_80_medium_seen,3,0.721572935752835,0.007416866950547274,complete
+29,Official Ditto,neural_em,wdc_80_medium_unseen,3,0.7033451080401064,0.016425999760399795,complete
+29,Official Ditto,neural_em,link_lives_release2,3,0.9419036785044149,0.0006306207322233532,complete
+30,Official Ditto + MixDA,neural_em,abt_buy,3,0.8971790042365058,0.006063390621773394,complete
+30,Official Ditto + MixDA,neural_em,amazon_google,3,0.7441807302747998,0.006355857976714687,complete
+30,Official Ditto + MixDA,neural_em,walmart_amazon,3,0.8660622876942443,0.008333357031610374,complete
+30,Official Ditto + MixDA,neural_em,wdc_80_medium_seen,3,0.735416073904778,0.008065578300738426,complete
+30,Official Ditto + MixDA,neural_em,wdc_80_medium_unseen,3,0.7011777335733006,0.006355918225909939,complete
+30,Official Ditto + MixDA,neural_em,link_lives_release2,3,0.9452541917942754,0.0011271712949278694,complete
+31,AnyMatch,neural_em,abt_buy,3,0.6029614250794197,0.05331381198902977,complete
+31,AnyMatch,neural_em,amazon_google,3,0.429632209234734,0.03641781090669923,complete
+31,AnyMatch,neural_em,walmart_amazon,3,0.496930729822103,0.09491513104129645,complete
+31,AnyMatch,neural_em,wdc_80_medium_seen,3,0.3666066631694276,0.005523981200980228,complete
+31,AnyMatch,neural_em,wdc_80_medium_unseen,3,0.4028127833671178,0.05934367073913444,complete
+31,AnyMatch,neural_em,link_lives_release2,3,0.32322731773286,0.027906518780679436,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,abt_buy,3,0.72544080604534,0,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,amazon_google,3,0.5995717344753747,0,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,walmart_amazon,3,0.7784431137724551,0,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,wdc_80_medium_seen,3,0.47043189368770766,0,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,wdc_80_medium_unseen,3,0.5127055306427504,0,complete
+32,HEF-GBDT + MixDA-style augmentation + E5,mixda_hef,link_lives_release2,3,0.8595161760419702,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,abt_buy,3,0.712871287128713,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,amazon_google,3,0.5708502024291497,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,walmart_amazon,3,0.7675070028011205,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,wdc_80_medium_seen,3,0.44129554655870445,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,wdc_80_medium_unseen,3,0.4921700223713647,0,complete
+33,HEF-GBDT + MixDA-style augmentation + Jina embedding,mixda_hef,link_lives_release2,3,0.8455789028345789,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,abt_buy,3,0.7255369928400954,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,amazon_google,3,0.5799256505576208,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,walmart_amazon,3,0.7917888563049852,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,wdc_80_medium_seen,3,0.44820846905537454,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,wdc_80_medium_unseen,3,0.5186267348429511,0,complete
+34,HEF-GBDT + MixDA-style augmentation + RoBERTa embedding,mixda_hef,link_lives_release2,3,0.8375035141973574,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,abt_buy,3,0.7105882352941176,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,amazon_google,3,0.5628140703517588,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,walmart_amazon,3,0.7719298245614036,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,wdc_80_medium_seen,3,0.44039270687237025,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,wdc_80_medium_unseen,3,0.4868519909842224,0,complete
+35,HEF-GBDT + MixDA-style augmentation + BERT embedding,mixda_hef,link_lives_release2,3,0.8487734487734487,0,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,abt_buy,3,0.7813528634531021,0.009210017779363863,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,amazon_google,3,0.6093224497279758,0.0019468574530799704,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,walmart_amazon,3,0.8090884839208204,0.008267900277382006,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,wdc_80_medium_seen,3,0.5456060235780749,0.013824574998092188,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,wdc_80_medium_unseen,3,0.5969004923936209,0.016031600490715215,complete
+36,HEF-GBDT + E5 + Jina zero-shot,cross_evidence,link_lives_release2,3,0.8817839873657857,0.0022974999476958633,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,abt_buy,3,0.8886010287365848,0.008695166463905208,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,amazon_google,3,0.6430276814390999,0.057943966671710964,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,walmart_amazon,3,0.8586654328514616,0.017325268855243353,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,wdc_80_medium_seen,3,0.7277520288026452,0.00770245486352903,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,wdc_80_medium_unseen,3,0.7063013304566703,0.014827419849563872,complete
+37,HEF-GBDT + E5 + Official Ditto,cross_evidence,link_lives_release2,3,0.9434602954540373,0.0013600065316157648,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,abt_buy,3,0.8950072974173487,0.011135134147762791,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,amazon_google,3,0.7160123972444903,0.017423146770002274,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,walmart_amazon,3,0.8768536160384558,0.007472351403645231,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,wdc_80_medium_seen,3,0.7439648015881638,0.007706518689079666,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,wdc_80_medium_unseen,3,0.7137804003702518,0.00765069283319863,complete
+38,HEF-GBDT + E5 + Official Ditto + MixDA,cross_evidence,link_lives_release2,3,0.9433602794151928,0.00027327596271237587,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,abt_buy,3,0.8322162340322686,0.007358878408071943,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,amazon_google,3,0.7450087046420725,0.008322095105821678,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,walmart_amazon,3,0.8436628793789037,0.014158589687123288,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.6859479596940505,0.012229565880741103,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.6302255827084084,0.02416871802352109,complete
+39,Joint neural HEF + BERT (fine-tuned),joint_neural_hef,link_lives_release2,3,0.918734725099816,0.006396450977756469,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,abt_buy,3,0.8180361739022247,0.016244829048907124,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,amazon_google,3,0.726530030040451,0.015178374132021269,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,walmart_amazon,3,0.7479685615950058,0.019506218960089184,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.5903437600600643,0.008574309746173969,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.5385377808922224,0.004904223997238856,complete
+40,Joint neural HEF + BGE (fine-tuned),joint_neural_hef,link_lives_release2,3,0.8918557939359322,0.007631575945967611,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,abt_buy,3,0.8358651239164471,0.009428344627232356,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,amazon_google,3,0.7482710707007958,0.008439039465049326,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,walmart_amazon,3,0.7410604895014904,0.03347111781738205,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.637965347580645,0.0047370177610474755,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.5840077180651984,0.01074257892412299,complete
+41,Joint neural HEF + E5 (fine-tuned),joint_neural_hef,link_lives_release2,3,0.8976878793939297,0.0031718551449757115,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,abt_buy,3,0.8533449310271765,0.0075493478863013115,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,amazon_google,3,0.7598422180230867,0.015290087281484422,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,walmart_amazon,3,0.805508411422606,0.015408369172401674,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.6767223231239062,0.009148147049667314,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.67452283309331,0.011907213752835507,complete
+42,Joint neural HEF + GTE (fine-tuned),joint_neural_hef,link_lives_release2,3,0.9220103690798105,0.0050521833293365,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,abt_buy,3,0.9009905226722928,0.009725306209255808,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,amazon_google,3,0.786361202219906,0.021581554819028518,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,walmart_amazon,3,0.8593884006259921,0.003456189149290102,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.7483781939043581,0.007359436569800402,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.7438793656396636,0.013665524488649937,complete
+43,Joint neural HEF + JINA (fine-tuned),joint_neural_hef,link_lives_release2,3,0.9364384903887712,0.001547609868214419,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,abt_buy,3,0.7564367041586758,0.010459048877983991,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,amazon_google,3,0.7106631713145942,0.01170650557971825,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,walmart_amazon,3,0.7296618220225776,0.016787016688497927,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.5354825644949076,0.0033316293679481537,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.5352649340269148,0.0008472623965555813,complete
+44,Joint neural HEF + MINILM (fine-tuned),joint_neural_hef,link_lives_release2,3,0.8801307657124843,0.00520358089458759,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,abt_buy,3,0.8973770311335825,0.019483421221795656,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,amazon_google,3,0.7660298576177457,0.00959948936713046,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,walmart_amazon,3,0.8769480583773936,0.008265990309196204,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,wdc_80_medium_seen,3,0.7433817220263474,0.013430473601041888,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,wdc_80_medium_unseen,3,0.7109160576155832,0.014261902794161004,complete
+45,Joint neural HEF + ROBERTA (fine-tuned),joint_neural_hef,link_lives_release2,3,0.9216529690088925,0.00518230390814184,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,abt_buy,3,0.8944617152115647,0.010776778839114319,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,amazon_google,3,0.7561586450547829,0.02220706139853566,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,walmart_amazon,3,0.8754769881746753,0.005246934183190907,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,wdc_80_medium_seen,3,0.7576540793141667,0.006452020903272717,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,wdc_80_medium_unseen,3,0.749609333425315,0.008480335753293596,complete
+46,HEF-GBDT + E5 + fine-tuned Jina (OOF),neural_hef_oof,link_lives_release2,3,0.9342761886289779,0.009490868607729394,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,abt_buy,3,0.9038064339794337,0.014917563024638156,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,amazon_google,3,0.7260509890460466,0.015493389423601516,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,walmart_amazon,3,0.8864248546066728,0.0028304335932393438,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,wdc_80_medium_seen,3,0.7318769335541573,0.007394494986428573,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,wdc_80_medium_unseen,3,0.7192876846602921,0.01622549337847275,complete
+47,HEF-GBDT + E5 + fine-tuned RoBERTa (OOF),neural_hef_oof,link_lives_release2,3,0.9356373744825014,0.006116191277044894,complete

@@ -1,0 +1,33 @@
+{
+  "dataset": "abt_buy",
+  "mask": {
+    "affected_pair_cells": 53425,
+    "mask_sha256": "7f3c89b5bdbc2262e680e297c30db0f951082173b93d5e6be40269c8327425b7",
+    "probability": 0.7,
+    "seed": 20260727,
+    "unique_record_fields_masked": 1916
+  },
+  "metrics": {
+    "hits_at_1": 0.22727272727272727,
+    "hits_at_100": 1.0,
+    "hits_at_1_retention": 0.23809523809523808,
+    "mrr_at_100": 0.30872982909125674,
+    "mrr_retention": 0.31678663196037893,
+    "queries": 154
+  },
+  "model": "hef_gbdt_e5_jina_oof",
+  "scenario": "p70_seed20260727",
+  "stages": {
+    "cached_fusion": 0.02656425500754267,
+    "e5_encoding": 12.302377257001353,
+    "structured_features": 0.9505943049880443,
+    "task_neural_inference": 24.604723244992783
+  },
+  "timing": {
+    "gpu_peak_allocated_bytes": 5699179008,
+    "gpu_peak_reserved_bytes": 7497318400,
+    "rss_peak_bytes": 2695868416,
+    "rss_start_bytes": 2601238528,
+    "seconds": 37.88494733598782
+  }
+}
